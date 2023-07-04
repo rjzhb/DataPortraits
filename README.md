@@ -8,9 +8,12 @@ Paper: https://arxiv.org/abs/2303.03919
 
 ![image](https://github.com/rjzhb/DataPortraits/assets/105226542/c02dddab-827f-435b-87fd-c987f4180401)
 
-## Requires Log4cxx
+## Requires spdlog, Google-test
 ```shell
-sudo apt-get install -y liblog4cxx-dev
+sudo apt-get install libspdlog-dev.
+
+sudo apt-get install libgtest-dev.
+export CMAKE_PREFIX_PATH=/path/to/gtest:$CMAKE_PREFIX_PATH
 ```
 
 ## Code Structure
