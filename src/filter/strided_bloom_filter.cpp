@@ -8,35 +8,42 @@
 StridedBloomFilter::~StridedBloomFilter() = default;
 
 StridedBloomFilter::StridedBloomFilter(StridedBloomFilter &&other) noexcept
-        : BloomFilter(std::move(other)), stride_(other.stride_) {
-    other.stride_ = 0;
+        : BloomFilter(std::move(other)) {
 }
 
 auto StridedBloomFilter::operator=(StridedBloomFilter &&other) noexcept -> StridedBloomFilter & {
     if (this != &other) {
         BloomFilter::operator=(std::move(other));
-        stride_ = other.stride_;
-        other.stride_ = 0;
     }
     return *this;
 }
 
-auto StridedBloomFilter::insertStrided(const std::string &value) -> void {
-    for (size_t i = 0; i < value.size(); i += stride_) {
-        if (i + stride_ > value.size()) {
+auto StridedBloomFilter::insertStrided(const std::string &value, size_t stride) -> void {
+    for (size_t i = 0; i < value.size(); i += stride * tile_size_) {
+        if (i + stride * tile_size_ > value.size()) {
             break;
         }
-        insert(value.substr(i, stride_));
+        insert(value.substr(i, stride * tile_size_));
     }
 }
 
-auto StridedBloomFilter::queryStrided(const std::string &value) const -> int {
+auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) const -> int {
     int matches = 0;
-    for (size_t i = 0; i < value.size() - stride_ + 1; ++i) {
-        spdlog::info("string {} is being queried", value.substr(i, stride_));
-        if (contains(value.substr(i, stride_))) {
+    std::string chain_list;
+    for (size_t i = 0; i < value.size() - stride * tile_size_ + 1; ++i) {
+        std::string tile_str = value.substr(i, stride * tile_size_);
+        spdlog::info("string {} is being queried", tile_str);
+        if (contains(tile_str)) {
             ++matches;
+            //chaining
+            chain_list.append(tile_str);
         }
     }
+    //save the result
+    chain_list_ = std::move(chain_list);
     return matches;
+}
+
+auto StridedBloomFilter::getChain() const -> std::string {
+    return chain_list_;
 }

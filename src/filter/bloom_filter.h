@@ -15,13 +15,13 @@
 
 class BloomFilter {
 public:
-    BloomFilter(size_t size, size_t hashFunctionsAmount);
+    BloomFilter(size_t size, size_t hash_function_amount);
 
     ~BloomFilter();
 
     BloomFilter(BloomFilter &&other) noexcept;
 
-    auto operator=(BloomFilter &&other) noexcept -> BloomFilter&;
+    auto operator=(BloomFilter &&other) noexcept -> BloomFilter &;
 
     auto insert(const std::string &value) -> void;
 
@@ -30,9 +30,8 @@ public:
 private:
     std::vector<bool> filter_;
     size_t size_{};
-    size_t hashFunctionsAmount_{};
+    size_t hash_function_amount_{};
 };
-
 
 
 #endif //BLOOMFILTER_H

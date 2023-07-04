@@ -10,8 +10,8 @@
 
 class StridedBloomFilter : public BloomFilter {
 public:
-    StridedBloomFilter(size_t size, size_t hashFunctionsAmount, size_t stride)
-            : BloomFilter(size, hashFunctionsAmount), stride_(stride) {}
+    StridedBloomFilter(size_t size, size_t hash_function_amount, size_t tile_size)
+            : BloomFilter(size, hash_function_amount), tile_size_(tile_size), chain_list_("") {}
 
     ~StridedBloomFilter();
 
@@ -19,12 +19,17 @@ public:
 
     auto operator=(StridedBloomFilter &&other) noexcept -> StridedBloomFilter &;
 
-    auto insertStrided(const std::string &value) -> void;
+    //gain the result of last query
+    auto getChain() const -> std::string;
 
-    auto queryStrided(const std::string &value) const -> int;
+    auto insertStrided(const std::string &value, size_t stride) -> void;
+
+    auto queryStrided(const std::string &value, size_t stride) const -> int;
 
 private:
-    size_t stride_;
+    mutable std::string chain_list_;
+    //size of tile
+    size_t tile_size_{};
 };
 
 
