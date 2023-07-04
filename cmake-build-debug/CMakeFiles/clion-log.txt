@@ -1,0 +1,4 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /usr/bin/zsh -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc-11 '-DCMAKE_CXX_COMPILER=/usr/bin/g++-11' -G 'CodeBlocks - Unix Makefiles' -S /home/rjzhb/Project/CppModelProject -B /home/rjzhb/Project/CppModelProject/cmake-build-debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rjzhb/Project/CppModelProject/cmake-build-debug

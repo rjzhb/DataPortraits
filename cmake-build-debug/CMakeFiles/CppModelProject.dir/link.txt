@@ -1,0 +1,1 @@
+/usr/bin/g++-11  -g   CMakeFiles/CppModelProject.dir/main.cpp.o CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o  -o CppModelProject 
