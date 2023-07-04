@@ -7,13 +7,14 @@
 
 // Test BloomFilter
 TEST(BloomFilterTest, InsertAndContains) {
-    BloomFilter filter(1000, 5);
-    filter.insert("hello");
-    filter.insert("world");
-    EXPECT_TRUE(filter.contains("hello"));
-    EXPECT_TRUE(filter.contains("world"));
-    EXPECT_FALSE(filter.contains("foo"));
-    EXPECT_FALSE(filter.contains("bar"));
+    auto *filter = new BloomFilter(1000, 5);
+    filter->insert("hello");
+    filter->insert("world");
+    EXPECT_TRUE(filter->contains("hello"));
+    EXPECT_TRUE(filter->contains("world"));
+    EXPECT_FALSE(filter->contains("foo"));
+    EXPECT_FALSE(filter->contains("bar"));
+    delete filter;
 }
 
 
