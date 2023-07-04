@@ -3,6 +3,7 @@
 //
 
 #include "strided_bloom_filter.h"
+#include <spdlog/spdlog.h>
 
 StridedBloomFilter::~StridedBloomFilter() = default;
 
@@ -20,19 +21,20 @@ auto StridedBloomFilter::operator=(StridedBloomFilter &&other) noexcept -> Strid
     return *this;
 }
 
-auto StridedBloomFilter::insertStrided(const std::string &value, size_t n) -> void {
+auto StridedBloomFilter::insertStrided(const std::string &value) -> void {
     for (size_t i = 0; i < value.size(); i += stride_) {
-        if (i + n > value.size()) {
+        if (i + stride_ > value.size()) {
             break;
         }
-        insert(value.substr(i, n));
+        insert(value.substr(i, stride_));
     }
 }
 
-auto StridedBloomFilter::queryStrided(const std::string &value, size_t n) const -> int {
+auto StridedBloomFilter::queryStrided(const std::string &value) const -> int {
     int matches = 0;
-    for (size_t i = 0; i < value.size() - n + 1; ++i) {
-        if (contains(value.substr(i, n))) {
+    for (size_t i = 0; i < value.size() - stride_ + 1; ++i) {
+        spdlog::info("string {} is being queried", value.substr(i, stride_));
+        if (contains(value.substr(i, stride_))) {
             ++matches;
         }
     }

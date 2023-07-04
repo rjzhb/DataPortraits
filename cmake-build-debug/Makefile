@@ -162,32 +162,32 @@ test_bloom_filter/fast:
 	$(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/build
 .PHONY : test_bloom_filter/fast
 
-main.o: main.cpp.o
+benchmark.o: benchmark.cpp.o
 
-.PHONY : main.o
+.PHONY : benchmark.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.o
-.PHONY : main.cpp.o
+benchmark.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/benchmark.cpp.o
+.PHONY : benchmark.cpp.o
 
-main.i: main.cpp.i
+benchmark.i: benchmark.cpp.i
 
-.PHONY : main.i
+.PHONY : benchmark.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.i
-.PHONY : main.cpp.i
+benchmark.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/benchmark.cpp.i
+.PHONY : benchmark.cpp.i
 
-main.s: main.cpp.s
+benchmark.s: benchmark.cpp.s
 
-.PHONY : main.s
+.PHONY : benchmark.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.s
-.PHONY : main.cpp.s
+benchmark.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/benchmark.cpp.s
+.PHONY : benchmark.cpp.s
 
 src/filter/bloom_filter.o: src/filter/bloom_filter.cpp.o
 
@@ -255,9 +255,9 @@ help:
 	@echo "... DataPortraits_lib"
 	@echo "... test_strided_bloom_filter"
 	@echo "... test_bloom_filter"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... benchmark.o"
+	@echo "... benchmark.i"
+	@echo "... benchmark.s"
 	@echo "... src/filter/bloom_filter.o"
 	@echo "... src/filter/bloom_filter.i"
 	@echo "... src/filter/bloom_filter.s"

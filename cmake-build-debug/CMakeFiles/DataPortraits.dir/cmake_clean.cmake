@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataPortraits.dir/main.cpp.o"
+  "CMakeFiles/DataPortraits.dir/benchmark.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.o"
   "DataPortraits"

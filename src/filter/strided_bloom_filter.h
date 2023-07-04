@@ -2,8 +2,8 @@
 // Created by 86183 on 2023/7/4.
 //
 
-#ifndef DATAPORTRAITS_STRIDEDBLOOMFILTER_H
-#define DATAPORTRAITS_STRIDEDBLOOMFILTER_H
+#ifndef STRIDEDBLOOMFILTER_H
+#define STRIDEDBLOOMFILTER_H
 
 
 #include "bloom_filter.h"
@@ -19,13 +19,13 @@ public:
 
     auto operator=(StridedBloomFilter &&other) noexcept -> StridedBloomFilter &;
 
-    auto insertStrided(const std::string &value, size_t n) -> void;
+    auto insertStrided(const std::string &value) -> void;
 
-    auto queryStrided(const std::string &value, size_t n) const -> int;
+    auto queryStrided(const std::string &value) const -> int;
 
 private:
     size_t stride_;
 };
 
 
-#endif //DATAPORTRAITS_STRIDEDBLOOMFILTER_H
+#endif //STRIDEDBLOOMFILTER_H

@@ -2,9 +2,9 @@
 // Created by 86183 on 2023/7/4.
 //
 
-#ifndef DATAPORTRAITS_BLOOMFILTER_H
-#define DATAPORTRAITS_BLOOMFILTER_H
 
+#ifndef BLOOMFILTER_H
+#define BLOOMFILTER_H
 
 #include <bitset>
 #include <iostream>
@@ -12,12 +12,6 @@
 #include <string>
 #include <functional>
 
-
-#ifndef BLOOMFILTER_H
-#define BLOOMFILTER_H
-
-#include <vector>
-#include <string>
 
 class BloomFilter {
 public:
@@ -39,7 +33,6 @@ private:
     size_t hashFunctionsAmount_{};
 };
 
-#endif /* BLOOMFILTER_H */
 
 
-#endif //DATAPORTRAITS_BLOOMFILTER_H
+#endif //BLOOMFILTER_H

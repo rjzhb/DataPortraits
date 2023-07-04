@@ -17,10 +17,6 @@ string
 -
 functional
 -
-vector
--
-string
--
 
 ../src/filter/strided_bloom_filter.h
 bloom_filter.h

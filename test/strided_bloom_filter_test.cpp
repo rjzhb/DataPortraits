@@ -7,11 +7,11 @@
 
 // Test StridedBloomFilter
 TEST(StridedBloomFilterTest, InsertStridedAndQueryStrided) {
-    StridedBloomFilter sbf(1000, 5, 3);
-    sbf.insertStrided("hello world", 3);
-    sbf.insertStrided("foo bar", 3);
-    EXPECT_EQ(sbf.queryStrided("helloworld", 3), 1);
-    EXPECT_EQ(sbf.queryStrided("worldfoo", 3), 0);
+    StridedBloomFilter filter(1000, 5, 3);
+    filter.insertStrided("hello world");
+    filter.insertStrided("foo bar");
+    EXPECT_EQ(filter.queryStrided("hello world"), 3);
+    EXPECT_EQ(filter.queryStrided("worldfoo"), 2);
 }
 
 

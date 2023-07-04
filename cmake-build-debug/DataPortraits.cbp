@@ -230,7 +230,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rjzhb/Project/DataPortraits/main.cpp">
+		<Unit filename="/home/rjzhb/Project/DataPortraits/benchmark.cpp">
 			<Option target="DataPortraits"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp">
