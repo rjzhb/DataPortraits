@@ -1,1 +1,0 @@
-/usr/bin/g++-11 -fPIC -g  -shared -Wl,-soname,libCppModelProject_lib.so -o libCppModelProject_lib.so CMakeFiles/CppModelProject_lib.dir/src/MyClass/MyClass.cpp.o 

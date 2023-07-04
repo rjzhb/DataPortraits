@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rjzhb/Project/CppModelProject
+CMAKE_SOURCE_DIR = /home/rjzhb/Project/DataPortraits
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rjzhb/Project/CppModelProject/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rjzhb/Project/DataPortraits/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CppModelProject.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/CppModelProject.dir/flags.make
 
 CMakeFiles/CppModelProject.dir/main.cpp.o: CMakeFiles/CppModelProject.dir/flags.make
 CMakeFiles/CppModelProject.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppModelProject.dir/main.cpp.o"
-	/usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/main.cpp.o -c /home/rjzhb/Project/CppModelProject/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CppModelProject.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/main.cpp.o -c /home/rjzhb/Project/DataPortraits/main.cpp
 
 CMakeFiles/CppModelProject.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppModelProject.dir/main.cpp.i"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/CppModelProject/main.cpp > CMakeFiles/CppModelProject.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/main.cpp > CMakeFiles/CppModelProject.dir/main.cpp.i
 
 CMakeFiles/CppModelProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppModelProject.dir/main.cpp.s"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/CppModelProject/main.cpp -o CMakeFiles/CppModelProject.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/main.cpp -o CMakeFiles/CppModelProject.dir/main.cpp.s
 
 CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o: CMakeFiles/CppModelProject.dir/flags.make
 CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o: ../src/MyClass/MyClass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o"
-	/usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o -c /home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o -c /home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.cpp
 
 CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.i"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.cpp > CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.cpp > CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.i
 
 CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.s"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.cpp -o CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.cpp -o CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.s
 
 CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o: CMakeFiles/CppModelProject.dir/flags.make
 CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o: ../src/MultipleManager/MultipleManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o"
-	/usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o -c /home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o -c /home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.cpp
 
 CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.i"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.cpp > CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.cpp > CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.i
 
 CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.s"
-	/usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.cpp -o CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.cpp -o CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.s
 
 # Object files for target CppModelProject
 CppModelProject_OBJECTS = \
@@ -110,7 +110,7 @@ CppModelProject: CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o
 CppModelProject: CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o
 CppModelProject: CMakeFiles/CppModelProject.dir/build.make
 CppModelProject: CMakeFiles/CppModelProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CppModelProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CppModelProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CppModelProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/CppModelProject.dir/clean:
 .PHONY : CMakeFiles/CppModelProject.dir/clean
 
 CMakeFiles/CppModelProject.dir/depend:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rjzhb/Project/CppModelProject /home/rjzhb/Project/CppModelProject /home/rjzhb/Project/CppModelProject/cmake-build-debug /home/rjzhb/Project/CppModelProject/cmake-build-debug /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles/CppModelProject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rjzhb/Project/DataPortraits /home/rjzhb/Project/DataPortraits /home/rjzhb/Project/DataPortraits/cmake-build-debug /home/rjzhb/Project/DataPortraits/cmake-build-debug /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles/CppModelProject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CppModelProject.dir/depend
 

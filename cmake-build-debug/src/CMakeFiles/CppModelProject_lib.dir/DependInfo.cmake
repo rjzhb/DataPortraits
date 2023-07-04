@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.cpp" "/home/rjzhb/Project/CppModelProject/cmake-build-debug/src/CMakeFiles/CppModelProject_lib.dir/MultipleManager/MultipleManager.cpp.o"
-  "/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.cpp" "/home/rjzhb/Project/CppModelProject/cmake-build-debug/src/CMakeFiles/CppModelProject_lib.dir/MyClass/MyClass.cpp.o"
+  "/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/CppModelProject_lib.dir/MultipleManager/MultipleManager.cpp.o"
+  "/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/CppModelProject_lib.dir/MyClass/MyClass.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

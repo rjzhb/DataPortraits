@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../Test/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
+  "../test/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -55,13 +55,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/CppModelProject.dir/DependInfo.cmake"
-  "src/CMakeFiles/CppModelProject_lib.dir/DependInfo.cmake"
-  "Test/CMakeFiles/testMultiple.dir/DependInfo.cmake"
-  "Test/CMakeFiles/test_MyClass.dir/DependInfo.cmake"
+  "CMakeFiles/DataPortraits.dir/DependInfo.cmake"
+  "src/CMakeFiles/DataPortraits_lib.dir/DependInfo.cmake"
+  "test/CMakeFiles/testMultiple.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_MyClass.dir/DependInfo.cmake"
   )

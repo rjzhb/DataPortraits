@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/rjzhb/Project/CppModelProject/Test/MultipleTest.cpp
+/home/rjzhb/Project/DataPortraits/Test/MultipleTest.cpp
 gtest/gtest.h
-/home/rjzhb/Project/CppModelProject/Test/gtest/gtest.h
+/home/rjzhb/Project/DataPortraits/Test/gtest/gtest.h
 ../src/MultipleManager/MultipleManager.h
-/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.h
+/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.h
 
-/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.h
+/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.h
 

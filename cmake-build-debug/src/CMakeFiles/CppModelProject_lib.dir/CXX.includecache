@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.cpp
+/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.cpp
 MultipleManager.h
-/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.h
+/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.h
 
-/home/rjzhb/Project/CppModelProject/src/MultipleManager/MultipleManager.h
+/home/rjzhb/Project/DataPortraits/src/MultipleManager/MultipleManager.h
 
-/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.cpp
+/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.cpp
 MyClass.h
-/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.h
+/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.h
 
-/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.h
+/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.h
 

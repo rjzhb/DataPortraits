@@ -1,4 +1,4 @@
-# Install script for directory: /home/rjzhb/Project/CppModelProject/src
+# Install script for directory: /home/rjzhb/Project/DataPortraits/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

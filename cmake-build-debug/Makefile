@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rjzhb/Project/CppModelProject
+CMAKE_SOURCE_DIR = /home/rjzhb/Project/DataPortraits
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rjzhb/Project/CppModelProject/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rjzhb/Project/DataPortraits/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CppModelProject
+# Target rules for targets named DataPortraits
 
 # Build rule for target.
-CppModelProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CppModelProject
-.PHONY : CppModelProject
+DataPortraits: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DataPortraits
+.PHONY : DataPortraits
 
 # fast build rule for target.
-CppModelProject/fast:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/build
-.PHONY : CppModelProject/fast
+DataPortraits/fast:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/build
+.PHONY : DataPortraits/fast
 
 #=============================================================================
-# Target rules for targets named CppModelProject_lib
+# Target rules for targets named DataPortraits_lib
 
 # Build rule for target.
-CppModelProject_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CppModelProject_lib
-.PHONY : CppModelProject_lib
+DataPortraits_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DataPortraits_lib
+.PHONY : DataPortraits_lib
 
 # fast build rule for target.
-CppModelProject_lib/fast:
-	$(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/build
-.PHONY : CppModelProject_lib/fast
+DataPortraits_lib/fast:
+	$(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/build
+.PHONY : DataPortraits_lib/fast
 
 #=============================================================================
 # Target rules for targets named testMultiple
@@ -146,7 +146,7 @@ testMultiple: cmake_check_build_system
 
 # fast build rule for target.
 testMultiple/fast:
-	$(MAKE) -f Test/CMakeFiles/testMultiple.dir/build.make Test/CMakeFiles/testMultiple.dir/build
+	$(MAKE) -f test/CMakeFiles/testMultiple.dir/build.make test/CMakeFiles/testMultiple.dir/build
 .PHONY : testMultiple/fast
 
 #=============================================================================
@@ -159,7 +159,7 @@ test_MyClass: cmake_check_build_system
 
 # fast build rule for target.
 test_MyClass/fast:
-	$(MAKE) -f Test/CMakeFiles/test_MyClass.dir/build.make Test/CMakeFiles/test_MyClass.dir/build
+	$(MAKE) -f test/CMakeFiles/test_MyClass.dir/build.make test/CMakeFiles/test_MyClass.dir/build
 .PHONY : test_MyClass/fast
 
 main.o: main.cpp.o
@@ -168,7 +168,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -177,7 +177,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -186,7 +186,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/MultipleManager/MultipleManager.o: src/MultipleManager/MultipleManager.cpp.o
@@ -195,7 +195,7 @@ src/MultipleManager/MultipleManager.o: src/MultipleManager/MultipleManager.cpp.o
 
 # target to build an object file
 src/MultipleManager/MultipleManager.cpp.o:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.o
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.o
 .PHONY : src/MultipleManager/MultipleManager.cpp.o
 
 src/MultipleManager/MultipleManager.i: src/MultipleManager/MultipleManager.cpp.i
@@ -204,7 +204,7 @@ src/MultipleManager/MultipleManager.i: src/MultipleManager/MultipleManager.cpp.i
 
 # target to preprocess a source file
 src/MultipleManager/MultipleManager.cpp.i:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.i
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.i
 .PHONY : src/MultipleManager/MultipleManager.cpp.i
 
 src/MultipleManager/MultipleManager.s: src/MultipleManager/MultipleManager.cpp.s
@@ -213,7 +213,7 @@ src/MultipleManager/MultipleManager.s: src/MultipleManager/MultipleManager.cpp.s
 
 # target to generate assembly for a file
 src/MultipleManager/MultipleManager.cpp.s:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MultipleManager/MultipleManager.cpp.s
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.s
 .PHONY : src/MultipleManager/MultipleManager.cpp.s
 
 src/MyClass/MyClass.o: src/MyClass/MyClass.cpp.o
@@ -222,7 +222,7 @@ src/MyClass/MyClass.o: src/MyClass/MyClass.cpp.o
 
 # target to build an object file
 src/MyClass/MyClass.cpp.o:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.o
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.o
 .PHONY : src/MyClass/MyClass.cpp.o
 
 src/MyClass/MyClass.i: src/MyClass/MyClass.cpp.i
@@ -231,7 +231,7 @@ src/MyClass/MyClass.i: src/MyClass/MyClass.cpp.i
 
 # target to preprocess a source file
 src/MyClass/MyClass.cpp.i:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.i
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.i
 .PHONY : src/MyClass/MyClass.cpp.i
 
 src/MyClass/MyClass.s: src/MyClass/MyClass.cpp.s
@@ -240,7 +240,7 @@ src/MyClass/MyClass.s: src/MyClass/MyClass.cpp.s
 
 # target to generate assembly for a file
 src/MyClass/MyClass.cpp.s:
-	$(MAKE) -f CMakeFiles/CppModelProject.dir/build.make CMakeFiles/CppModelProject.dir/src/MyClass/MyClass.cpp.s
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.s
 .PHONY : src/MyClass/MyClass.cpp.s
 
 # Help Target
@@ -251,8 +251,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... CppModelProject"
-	@echo "... CppModelProject_lib"
+	@echo "... DataPortraits"
+	@echo "... DataPortraits_lib"
 	@echo "... testMultiple"
 	@echo "... test_MyClass"
 	@echo "... main.o"

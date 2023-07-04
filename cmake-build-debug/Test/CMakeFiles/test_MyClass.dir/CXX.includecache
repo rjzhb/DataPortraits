@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/rjzhb/Project/CppModelProject/Test/Test.cpp
+/home/rjzhb/Project/DataPortraits/Test/Test.cpp
 gtest/gtest.h
 -
 ../src/MyClass/MyClass.h
-/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.h
+/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.h
 
-/home/rjzhb/Project/CppModelProject/src/MyClass/MyClass.h
+/home/rjzhb/Project/DataPortraits/src/MyClass/MyClass.h
 

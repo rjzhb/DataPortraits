@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rjzhb/Project/CppModelProject
+CMAKE_SOURCE_DIR = /home/rjzhb/Project/DataPortraits
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rjzhb/Project/CppModelProject/cmake-build-debug
+CMAKE_BINARY_DIR = /home/rjzhb/Project/DataPortraits/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles /home/rjzhb/Project/CppModelProject/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/CppModelProject/cmake-build-debug/CMakeFiles 0
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles /home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,33 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/CppModelProject_lib.dir/rule:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CppModelProject_lib.dir/rule
-.PHONY : src/CMakeFiles/CppModelProject_lib.dir/rule
+src/CMakeFiles/DataPortraits_lib.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DataPortraits_lib.dir/rule
+.PHONY : src/CMakeFiles/DataPortraits_lib.dir/rule
 
 # Convenience name for target.
-CppModelProject_lib: src/CMakeFiles/CppModelProject_lib.dir/rule
+DataPortraits_lib: src/CMakeFiles/DataPortraits_lib.dir/rule
 
-.PHONY : CppModelProject_lib
+.PHONY : DataPortraits_lib
 
 # fast build rule for target.
-CppModelProject_lib/fast:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/build
-.PHONY : CppModelProject_lib/fast
+DataPortraits_lib/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/build
+.PHONY : DataPortraits_lib/fast
 
 MultipleManager/MultipleManager.o: MultipleManager/MultipleManager.cpp.o
 
@@ -131,7 +131,7 @@ MultipleManager/MultipleManager.o: MultipleManager/MultipleManager.cpp.o
 
 # target to build an object file
 MultipleManager/MultipleManager.cpp.o:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MultipleManager/MultipleManager.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.o
 .PHONY : MultipleManager/MultipleManager.cpp.o
 
 MultipleManager/MultipleManager.i: MultipleManager/MultipleManager.cpp.i
@@ -140,7 +140,7 @@ MultipleManager/MultipleManager.i: MultipleManager/MultipleManager.cpp.i
 
 # target to preprocess a source file
 MultipleManager/MultipleManager.cpp.i:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MultipleManager/MultipleManager.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.i
 .PHONY : MultipleManager/MultipleManager.cpp.i
 
 MultipleManager/MultipleManager.s: MultipleManager/MultipleManager.cpp.s
@@ -149,7 +149,7 @@ MultipleManager/MultipleManager.s: MultipleManager/MultipleManager.cpp.s
 
 # target to generate assembly for a file
 MultipleManager/MultipleManager.cpp.s:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MultipleManager/MultipleManager.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.s
 .PHONY : MultipleManager/MultipleManager.cpp.s
 
 MyClass/MyClass.o: MyClass/MyClass.cpp.o
@@ -158,7 +158,7 @@ MyClass/MyClass.o: MyClass/MyClass.cpp.o
 
 # target to build an object file
 MyClass/MyClass.cpp.o:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MyClass/MyClass.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.o
 .PHONY : MyClass/MyClass.cpp.o
 
 MyClass/MyClass.i: MyClass/MyClass.cpp.i
@@ -167,7 +167,7 @@ MyClass/MyClass.i: MyClass/MyClass.cpp.i
 
 # target to preprocess a source file
 MyClass/MyClass.cpp.i:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MyClass/MyClass.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.i
 .PHONY : MyClass/MyClass.cpp.i
 
 MyClass/MyClass.s: MyClass/MyClass.cpp.s
@@ -176,7 +176,7 @@ MyClass/MyClass.s: MyClass/MyClass.cpp.s
 
 # target to generate assembly for a file
 MyClass/MyClass.cpp.s:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(MAKE) -f src/CMakeFiles/CppModelProject_lib.dir/build.make src/CMakeFiles/CppModelProject_lib.dir/MyClass/MyClass.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.s
 .PHONY : MyClass/MyClass.cpp.s
 
 # Help Target
@@ -187,7 +187,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... CppModelProject_lib"
+	@echo "... DataPortraits_lib"
 	@echo "... MultipleManager/MultipleManager.o"
 	@echo "... MultipleManager/MultipleManager.i"
 	@echo "... MultipleManager/MultipleManager.s"
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rjzhb/Project/CppModelProject/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

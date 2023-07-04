@@ -2,8 +2,8 @@
 // Created by 86183 on 2023/3/22.
 //
 
-#ifndef CPPMODELPROJECT_MYCLASS_H
-#define CPPMODELPROJECT_MYCLASS_H
+#ifndef DATAPORTRAITS_MYCLASS_H
+#define DATAPORTRAITS_MYCLASS_H
 
 
 class MyClass {
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //CPPMODELPROJECT_MYCLASS_H
+#endif //DATAPORTRAITS_MYCLASS_H
