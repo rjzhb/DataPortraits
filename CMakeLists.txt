@@ -12,6 +12,6 @@ include_directories(${PROJECT_SOURCE_DIR}/third_party/gtest/include)
 add_subdirectory(src)
 add_subdirectory(test)
 # executable
-add_executable(DataPortraits main.cpp src/filter/bloom_filter.h src/filter/bloom_filter.cpp src/filter/strided_bloom_filter.cpp src/filter/strided_bloom_filter.h)
+add_executable(DataPortraits benchmark.cpp src/filter/bloom_filter.h src/filter/bloom_filter.cpp src/filter/strided_bloom_filter.cpp src/filter/strided_bloom_filter.h)
 
 
