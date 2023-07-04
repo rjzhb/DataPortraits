@@ -1,5 +1,12 @@
 # DataPortraits [![CMake](https://github.com/intellistream/ModernCPlusProjectTemplate/actions/workflows/cmake.yml/badge.svg?branch=main)](https://github.com/intellistream/ModernCPlusProjectTemplate/actions/workflows/cmake.yml)
 Implementing the Paper: Data Portraits for Recording Foundation Model Training Data
+Paper: https://arxiv.org/abs/2303.03919
+
+## Introduction
+
+![image](https://github.com/rjzhb/DataPortraits/assets/105226542/5e4aa17a-9ad5-4fc6-b98d-4b3b0a2ccadb)
+
+![image](https://github.com/rjzhb/DataPortraits/assets/105226542/c02dddab-827f-435b-87fd-c987f4180401)
 
 ## Requires Log4cxx
 ```shell
