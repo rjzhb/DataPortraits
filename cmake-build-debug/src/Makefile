@@ -125,59 +125,59 @@ DataPortraits_lib/fast:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/build
 .PHONY : DataPortraits_lib/fast
 
-MultipleManager/MultipleManager.o: MultipleManager/MultipleManager.cpp.o
+filter/bloom_filter.o: filter/bloom_filter.cpp.o
 
-.PHONY : MultipleManager/MultipleManager.o
-
-# target to build an object file
-MultipleManager/MultipleManager.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.o
-.PHONY : MultipleManager/MultipleManager.cpp.o
-
-MultipleManager/MultipleManager.i: MultipleManager/MultipleManager.cpp.i
-
-.PHONY : MultipleManager/MultipleManager.i
-
-# target to preprocess a source file
-MultipleManager/MultipleManager.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.i
-.PHONY : MultipleManager/MultipleManager.cpp.i
-
-MultipleManager/MultipleManager.s: MultipleManager/MultipleManager.cpp.s
-
-.PHONY : MultipleManager/MultipleManager.s
-
-# target to generate assembly for a file
-MultipleManager/MultipleManager.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MultipleManager/MultipleManager.cpp.s
-.PHONY : MultipleManager/MultipleManager.cpp.s
-
-MyClass/MyClass.o: MyClass/MyClass.cpp.o
-
-.PHONY : MyClass/MyClass.o
+.PHONY : filter/bloom_filter.o
 
 # target to build an object file
-MyClass/MyClass.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.o
-.PHONY : MyClass/MyClass.cpp.o
+filter/bloom_filter.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o
+.PHONY : filter/bloom_filter.cpp.o
 
-MyClass/MyClass.i: MyClass/MyClass.cpp.i
+filter/bloom_filter.i: filter/bloom_filter.cpp.i
 
-.PHONY : MyClass/MyClass.i
+.PHONY : filter/bloom_filter.i
 
 # target to preprocess a source file
-MyClass/MyClass.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.i
-.PHONY : MyClass/MyClass.cpp.i
+filter/bloom_filter.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.i
+.PHONY : filter/bloom_filter.cpp.i
 
-MyClass/MyClass.s: MyClass/MyClass.cpp.s
+filter/bloom_filter.s: filter/bloom_filter.cpp.s
 
-.PHONY : MyClass/MyClass.s
+.PHONY : filter/bloom_filter.s
 
 # target to generate assembly for a file
-MyClass/MyClass.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/MyClass/MyClass.cpp.s
-.PHONY : MyClass/MyClass.cpp.s
+filter/bloom_filter.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.s
+.PHONY : filter/bloom_filter.cpp.s
+
+filter/strided_bloom_filter.o: filter/strided_bloom_filter.cpp.o
+
+.PHONY : filter/strided_bloom_filter.o
+
+# target to build an object file
+filter/strided_bloom_filter.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o
+.PHONY : filter/strided_bloom_filter.cpp.o
+
+filter/strided_bloom_filter.i: filter/strided_bloom_filter.cpp.i
+
+.PHONY : filter/strided_bloom_filter.i
+
+# target to preprocess a source file
+filter/strided_bloom_filter.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.i
+.PHONY : filter/strided_bloom_filter.cpp.i
+
+filter/strided_bloom_filter.s: filter/strided_bloom_filter.cpp.s
+
+.PHONY : filter/strided_bloom_filter.s
+
+# target to generate assembly for a file
+filter/strided_bloom_filter.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s
+.PHONY : filter/strided_bloom_filter.cpp.s
 
 # Help Target
 help:
@@ -188,12 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataPortraits_lib"
-	@echo "... MultipleManager/MultipleManager.o"
-	@echo "... MultipleManager/MultipleManager.i"
-	@echo "... MultipleManager/MultipleManager.s"
-	@echo "... MyClass/MyClass.o"
-	@echo "... MyClass/MyClass.i"
-	@echo "... MyClass/MyClass.s"
+	@echo "... filter/bloom_filter.o"
+	@echo "... filter/bloom_filter.i"
+	@echo "... filter/bloom_filter.s"
+	@echo "... filter/strided_bloom_filter.o"
+	@echo "... filter/strided_bloom_filter.i"
+	@echo "... filter/strided_bloom_filter.s"
 .PHONY : help
 
 

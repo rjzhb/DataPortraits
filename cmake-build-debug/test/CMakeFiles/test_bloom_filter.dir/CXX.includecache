@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/filter/bloom_filter.h
+bitset
+-
+iostream
+-
+vector
+-
+string
+-
+functional
+-
+vector
+-
+string
+-
+
+../src/filter/strided_bloom_filter.h
+bloom_filter.h
+../src/filter/bloom_filter.h
+
+/home/rjzhb/Project/DataPortraits/test/bloom_filter_test.cpp
+gtest/gtest.h
+/home/rjzhb/Project/DataPortraits/test/gtest/gtest.h
+bloom_filter.h
+/home/rjzhb/Project/DataPortraits/test/bloom_filter.h
+strided_bloom_filter.h
+/home/rjzhb/Project/DataPortraits/test/strided_bloom_filter.h
+

@@ -137,30 +137,30 @@ DataPortraits_lib/fast:
 .PHONY : DataPortraits_lib/fast
 
 #=============================================================================
-# Target rules for targets named testMultiple
+# Target rules for targets named test_strided_bloom_filter
 
 # Build rule for target.
-testMultiple: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testMultiple
-.PHONY : testMultiple
+test_strided_bloom_filter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_strided_bloom_filter
+.PHONY : test_strided_bloom_filter
 
 # fast build rule for target.
-testMultiple/fast:
-	$(MAKE) -f test/CMakeFiles/testMultiple.dir/build.make test/CMakeFiles/testMultiple.dir/build
-.PHONY : testMultiple/fast
+test_strided_bloom_filter/fast:
+	$(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/build
+.PHONY : test_strided_bloom_filter/fast
 
 #=============================================================================
-# Target rules for targets named test_MyClass
+# Target rules for targets named test_bloom_filter
 
 # Build rule for target.
-test_MyClass: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_MyClass
-.PHONY : test_MyClass
+test_bloom_filter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_bloom_filter
+.PHONY : test_bloom_filter
 
 # fast build rule for target.
-test_MyClass/fast:
-	$(MAKE) -f test/CMakeFiles/test_MyClass.dir/build.make test/CMakeFiles/test_MyClass.dir/build
-.PHONY : test_MyClass/fast
+test_bloom_filter/fast:
+	$(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/build
+.PHONY : test_bloom_filter/fast
 
 main.o: main.cpp.o
 
@@ -189,59 +189,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/MultipleManager/MultipleManager.o: src/MultipleManager/MultipleManager.cpp.o
+src/filter/bloom_filter.o: src/filter/bloom_filter.cpp.o
 
-.PHONY : src/MultipleManager/MultipleManager.o
-
-# target to build an object file
-src/MultipleManager/MultipleManager.cpp.o:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.o
-.PHONY : src/MultipleManager/MultipleManager.cpp.o
-
-src/MultipleManager/MultipleManager.i: src/MultipleManager/MultipleManager.cpp.i
-
-.PHONY : src/MultipleManager/MultipleManager.i
-
-# target to preprocess a source file
-src/MultipleManager/MultipleManager.cpp.i:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.i
-.PHONY : src/MultipleManager/MultipleManager.cpp.i
-
-src/MultipleManager/MultipleManager.s: src/MultipleManager/MultipleManager.cpp.s
-
-.PHONY : src/MultipleManager/MultipleManager.s
-
-# target to generate assembly for a file
-src/MultipleManager/MultipleManager.cpp.s:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MultipleManager/MultipleManager.cpp.s
-.PHONY : src/MultipleManager/MultipleManager.cpp.s
-
-src/MyClass/MyClass.o: src/MyClass/MyClass.cpp.o
-
-.PHONY : src/MyClass/MyClass.o
+.PHONY : src/filter/bloom_filter.o
 
 # target to build an object file
-src/MyClass/MyClass.cpp.o:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.o
-.PHONY : src/MyClass/MyClass.cpp.o
+src/filter/bloom_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.o
+.PHONY : src/filter/bloom_filter.cpp.o
 
-src/MyClass/MyClass.i: src/MyClass/MyClass.cpp.i
+src/filter/bloom_filter.i: src/filter/bloom_filter.cpp.i
 
-.PHONY : src/MyClass/MyClass.i
+.PHONY : src/filter/bloom_filter.i
 
 # target to preprocess a source file
-src/MyClass/MyClass.cpp.i:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.i
-.PHONY : src/MyClass/MyClass.cpp.i
+src/filter/bloom_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.i
+.PHONY : src/filter/bloom_filter.cpp.i
 
-src/MyClass/MyClass.s: src/MyClass/MyClass.cpp.s
+src/filter/bloom_filter.s: src/filter/bloom_filter.cpp.s
 
-.PHONY : src/MyClass/MyClass.s
+.PHONY : src/filter/bloom_filter.s
 
 # target to generate assembly for a file
-src/MyClass/MyClass.cpp.s:
-	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/MyClass/MyClass.cpp.s
-.PHONY : src/MyClass/MyClass.cpp.s
+src/filter/bloom_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.s
+.PHONY : src/filter/bloom_filter.cpp.s
+
+src/filter/strided_bloom_filter.o: src/filter/strided_bloom_filter.cpp.o
+
+.PHONY : src/filter/strided_bloom_filter.o
+
+# target to build an object file
+src/filter/strided_bloom_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.o
+.PHONY : src/filter/strided_bloom_filter.cpp.o
+
+src/filter/strided_bloom_filter.i: src/filter/strided_bloom_filter.cpp.i
+
+.PHONY : src/filter/strided_bloom_filter.i
+
+# target to preprocess a source file
+src/filter/strided_bloom_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.i
+.PHONY : src/filter/strided_bloom_filter.cpp.i
+
+src/filter/strided_bloom_filter.s: src/filter/strided_bloom_filter.cpp.s
+
+.PHONY : src/filter/strided_bloom_filter.s
+
+# target to generate assembly for a file
+src/filter/strided_bloom_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.s
+.PHONY : src/filter/strided_bloom_filter.cpp.s
 
 # Help Target
 help:
@@ -253,17 +253,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... DataPortraits"
 	@echo "... DataPortraits_lib"
-	@echo "... testMultiple"
-	@echo "... test_MyClass"
+	@echo "... test_strided_bloom_filter"
+	@echo "... test_bloom_filter"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/MultipleManager/MultipleManager.o"
-	@echo "... src/MultipleManager/MultipleManager.i"
-	@echo "... src/MultipleManager/MultipleManager.s"
-	@echo "... src/MyClass/MyClass.o"
-	@echo "... src/MyClass/MyClass.i"
-	@echo "... src/MyClass/MyClass.s"
+	@echo "... src/filter/bloom_filter.o"
+	@echo "... src/filter/bloom_filter.i"
+	@echo "... src/filter/bloom_filter.s"
+	@echo "... src/filter/strided_bloom_filter.o"
+	@echo "... src/filter/strided_bloom_filter.i"
+	@echo "... src/filter/strided_bloom_filter.s"
 .PHONY : help
 
 
