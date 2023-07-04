@@ -11,7 +11,7 @@
 class StridedBloomFilter : public BloomFilter {
 public:
     StridedBloomFilter(size_t size, size_t hash_function_amount, size_t tile_size)
-            : BloomFilter(size, hash_function_amount), tile_size_(tile_size), chain_list_("") {}
+            : BloomFilter(size, hash_function_amount), tile_size_(tile_size) {}
 
     ~StridedBloomFilter();
 
