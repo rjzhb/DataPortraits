@@ -3,13 +3,14 @@
 //
 #include "gtest/gtest.h"
 #include "bloom_filter.h"
-#include "strided_bloom_filter.h"
 
 // Test BloomFilter
 TEST(BloomFilterTest, InsertAndContains) {
     auto *filter = new BloomFilter(1000, 5);
+
     filter->insert("hello");
     filter->insert("world");
+
     EXPECT_TRUE(filter->contains("hello"));
     EXPECT_TRUE(filter->contains("world"));
     EXPECT_FALSE(filter->contains("foo"));

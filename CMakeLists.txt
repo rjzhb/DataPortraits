@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(GTest REQUIRED)
 include_directories(${PROJECT_SOURCE_DIR}/src/filter/)
 include_directories(${GTEST_INCLUDE_DIRS})
+include_directories(/usr/local/include)
+
 # add path
 include_directories(${PROJECT_SOURCE_DIR}/third_party/gtest/include)
 
