@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp
+bloom_filter.h
+/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h
+functional
+-
+
 /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h
 bitset
 -

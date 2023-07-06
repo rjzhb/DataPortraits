@@ -1,0 +1,11 @@
+//
+// Created by 86183 on 2023/7/6.
+//
+
+#ifndef DATAPORTRAITS_DEFINE_H
+#define DATAPORTRAITS_DEFINE_H
+
+#define HASH_FUNCTION_AMOUNT 100
+#define SIZE 100
+
+#endif //DATAPORTRAITS_DEFINE_H

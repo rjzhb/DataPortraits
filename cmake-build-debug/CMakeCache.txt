@@ -268,6 +268,9 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for xxhash.
+xxhash_DIR:PATH=xxhash_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

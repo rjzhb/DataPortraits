@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+fstream
+-
+iostream
+-
+vector
+-
+
+/home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp
+gtest/gtest.h
+/home/rjzhb/Project/DataPortraits/test/gtest/gtest.h
+../src/dataloader/dataloader.h
+/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+

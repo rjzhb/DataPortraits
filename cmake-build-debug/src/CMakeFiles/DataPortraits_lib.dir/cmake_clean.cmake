@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o"
   "CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o"
   "CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o"
   "libDataPortraits_lib.a"

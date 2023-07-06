@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rjzhb/Project/DataPortraits/src/filter -I/home/rjzhb/Project/DataPortraits/third_party/gtest/include 
+CXX_INCLUDES = -I/home/rjzhb/Project/DataPortraits/src/filter -I/home/rjzhb/Project/DataPortraits/src/common -I/home/rjzhb/Project/DataPortraits/src/dataloader -I/home/rjzhb/Project/DataPortraits/third_party/gtest/include 
 

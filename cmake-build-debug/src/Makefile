@@ -125,6 +125,33 @@ DataPortraits_lib/fast:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/build
 .PHONY : DataPortraits_lib/fast
 
+dataloader/dataloader.o: dataloader/dataloader.cpp.o
+
+.PHONY : dataloader/dataloader.o
+
+# target to build an object file
+dataloader/dataloader.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o
+.PHONY : dataloader/dataloader.cpp.o
+
+dataloader/dataloader.i: dataloader/dataloader.cpp.i
+
+.PHONY : dataloader/dataloader.i
+
+# target to preprocess a source file
+dataloader/dataloader.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.i
+.PHONY : dataloader/dataloader.cpp.i
+
+dataloader/dataloader.s: dataloader/dataloader.cpp.s
+
+.PHONY : dataloader/dataloader.s
+
+# target to generate assembly for a file
+dataloader/dataloader.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.s
+.PHONY : dataloader/dataloader.cpp.s
+
 filter/bloom_filter.o: filter/bloom_filter.cpp.o
 
 .PHONY : filter/bloom_filter.o
@@ -188,6 +215,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DataPortraits_lib"
+	@echo "... dataloader/dataloader.o"
+	@echo "... dataloader/dataloader.i"
+	@echo "... dataloader/dataloader.s"
 	@echo "... filter/bloom_filter.o"
 	@echo "... filter/bloom_filter.i"
 	@echo "... filter/bloom_filter.s"

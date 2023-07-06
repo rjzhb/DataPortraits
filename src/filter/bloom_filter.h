@@ -27,8 +27,10 @@ public:
 
     auto contains(const std::string &value) const -> bool;
 
+    auto setFilter(std::vector<char> &filter) -> void;
+
 private:
-    std::vector<bool> filter_;
+    std::vector<char> filter_;
     size_t size_{};
     size_t hash_function_amount_{};
 };

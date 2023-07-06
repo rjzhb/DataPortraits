@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/test_data_loader.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_data_loader.dir/rule
+.PHONY : test/CMakeFiles/test_data_loader.dir/rule
+
+# Convenience name for target.
+test_data_loader: test/CMakeFiles/test_data_loader.dir/rule
+
+.PHONY : test_data_loader
+
+# fast build rule for target.
+test_data_loader/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/build
+.PHONY : test_data_loader/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_strided_bloom_filter.dir/rule:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_strided_bloom_filter.dir/rule
 .PHONY : test/CMakeFiles/test_strided_bloom_filter.dir/rule
@@ -167,6 +182,33 @@ bloom_filter_test.cpp.s:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/bloom_filter_test.cpp.s
 .PHONY : bloom_filter_test.cpp.s
 
+dataloader_test.o: dataloader_test.cpp.o
+
+.PHONY : dataloader_test.o
+
+# target to build an object file
+dataloader_test.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o
+.PHONY : dataloader_test.cpp.o
+
+dataloader_test.i: dataloader_test.cpp.i
+
+.PHONY : dataloader_test.i
+
+# target to preprocess a source file
+dataloader_test.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i
+.PHONY : dataloader_test.cpp.i
+
+dataloader_test.s: dataloader_test.cpp.s
+
+.PHONY : dataloader_test.s
+
+# target to generate assembly for a file
+dataloader_test.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s
+.PHONY : dataloader_test.cpp.s
+
 strided_bloom_filter_test.o: strided_bloom_filter_test.cpp.o
 
 .PHONY : strided_bloom_filter_test.o
@@ -201,12 +243,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_data_loader"
 	@echo "... test_strided_bloom_filter"
 	@echo "... edit_cache"
 	@echo "... test_bloom_filter"
 	@echo "... bloom_filter_test.o"
 	@echo "... bloom_filter_test.i"
 	@echo "... bloom_filter_test.s"
+	@echo "... dataloader_test.o"
+	@echo "... dataloader_test.i"
+	@echo "... dataloader_test.s"
 	@echo "... strided_bloom_filter_test.o"
 	@echo "... strided_bloom_filter_test.i"
 	@echo "... strided_bloom_filter_test.s"

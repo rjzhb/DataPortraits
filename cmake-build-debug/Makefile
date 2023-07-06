@@ -137,6 +137,19 @@ DataPortraits_lib/fast:
 .PHONY : DataPortraits_lib/fast
 
 #=============================================================================
+# Target rules for targets named test_data_loader
+
+# Build rule for target.
+test_data_loader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_data_loader
+.PHONY : test_data_loader
+
+# fast build rule for target.
+test_data_loader/fast:
+	$(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/build
+.PHONY : test_data_loader/fast
+
+#=============================================================================
 # Target rules for targets named test_strided_bloom_filter
 
 # Build rule for target.
@@ -188,6 +201,33 @@ benchmark.s: benchmark.cpp.s
 benchmark.cpp.s:
 	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/benchmark.cpp.s
 .PHONY : benchmark.cpp.s
+
+src/dataloader/dataloader.o: src/dataloader/dataloader.cpp.o
+
+.PHONY : src/dataloader/dataloader.o
+
+# target to build an object file
+src/dataloader/dataloader.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/dataloader/dataloader.cpp.o
+.PHONY : src/dataloader/dataloader.cpp.o
+
+src/dataloader/dataloader.i: src/dataloader/dataloader.cpp.i
+
+.PHONY : src/dataloader/dataloader.i
+
+# target to preprocess a source file
+src/dataloader/dataloader.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/dataloader/dataloader.cpp.i
+.PHONY : src/dataloader/dataloader.cpp.i
+
+src/dataloader/dataloader.s: src/dataloader/dataloader.cpp.s
+
+.PHONY : src/dataloader/dataloader.s
+
+# target to generate assembly for a file
+src/dataloader/dataloader.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/dataloader/dataloader.cpp.s
+.PHONY : src/dataloader/dataloader.cpp.s
 
 src/filter/bloom_filter.o: src/filter/bloom_filter.cpp.o
 
@@ -253,11 +293,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... DataPortraits"
 	@echo "... DataPortraits_lib"
+	@echo "... test_data_loader"
 	@echo "... test_strided_bloom_filter"
 	@echo "... test_bloom_filter"
 	@echo "... benchmark.o"
 	@echo "... benchmark.i"
 	@echo "... benchmark.s"
+	@echo "... src/dataloader/dataloader.o"
+	@echo "... src/dataloader/dataloader.i"
+	@echo "... src/dataloader/dataloader.s"
 	@echo "... src/filter/bloom_filter.o"
 	@echo "... src/filter/bloom_filter.i"
 	@echo "... src/filter/bloom_filter.s"

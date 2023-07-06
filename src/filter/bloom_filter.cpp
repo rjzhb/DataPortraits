@@ -31,7 +31,7 @@ auto BloomFilter::operator=(BloomFilter &&other) noexcept -> BloomFilter & {
 auto BloomFilter::insert(const std::string &value) -> void {
     for (size_t i = 0; i < hash_function_amount_; ++i) {
         size_t hash = std::hash<std::string>{}(value + std::to_string(i)) % size_;
-        filter_[hash] = true;
+        filter_[hash] = 1;
     }
 }
 
@@ -43,4 +43,8 @@ auto BloomFilter::contains(const std::string &value) const -> bool {
         }
     }
     return true;
+}
+
+auto BloomFilter::setFilter(std::vector<char> &filter) -> void {
+    filter_ = filter;
 }
