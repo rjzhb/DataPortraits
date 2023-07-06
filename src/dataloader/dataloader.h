@@ -23,7 +23,7 @@ public:
 
     auto writeFilterToFile(const std::string &filename) -> void;
 
-    auto readFileToVector(const std::string &filename) -> std::vector<char>;
+    static auto readFileToVector(const std::string &filename) -> std::vector<char>;
 
     auto getFilter() const -> std::vector<char>;
 
