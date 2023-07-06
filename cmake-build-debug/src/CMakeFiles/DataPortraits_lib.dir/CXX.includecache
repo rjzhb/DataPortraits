@@ -6,10 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp
-bloom_filter.h
-/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h
-functional
+../src/common/define.h
+
+/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp
+dataloader.h
+/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+define.h
+/home/rjzhb/Project/DataPortraits/src/dataloader/define.h
+
+/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+fstream
+-
+iostream
+-
+vector
 -
 
 /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h

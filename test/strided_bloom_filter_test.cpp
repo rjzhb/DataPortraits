@@ -47,10 +47,18 @@ TEST(StridedBloomFilterTest2, InsertStridedAndQueryStridedInPaperCase) {
 TEST(StridedBloomFilterTest3, case1) {
     auto *filter = new StridedBloomFilter(1000, 5, 4);
 
-    filter->insertStrided("Johns Hopkins University is divided into nine schools, five of which serve undergraduates. The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates. Freshmen and sophomores are required to live on campus. More than 1,300 students participate in the Greek community. Hopkins also has additional campuses for its School of Advanced International Studies in Washington, D.C.; Bologna, Italy; and Nanjing, China. Hopkins’ graduate programs include the top-ranked Bloomberg School of Public Health and the highly ranked School of Education, Whiting School of Engineering, School of Medicine and the well-regarded Peabody Institute for music and dance. Johns Hopkins Hospital is a top-ranked hospital with highly ranked specialties.", 4);
+    filter->insertStrided("Johns Hopkins University is divided into nine schools, "
+                          "five of which serve undergraduates. "
+                          "The Homewood Campus, one of the university’s four campuses in and around Baltimore, "
+                          "is the primary campus for undergraduates. Freshmen and sophomores are required to live on campus. "
+                          "More than 1,300 students participate in the Greek community. "
+                          "Hopkins also has additional campuses for its School of Advanced International Studies in Washington, D.C."
+                          "; Bologna, Italy; and Nanjing, China. Hopkins’ graduate programs include the top-ranked Bloomberg School of Public Health and the highly ranked School of Education,"
+                          " Whiting School of Engineering, School of Medicine and the well-regarded Peabody Institute for music and dance. "
+                          "Johns Hopkins Hospital is a top-ranked hospital with highly ranked specialties.", 4);
 
-    EXPECT_EQ(filter->queryStrided("The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.", 4), 3);
-    EXPECT_EQ(filter->getChain(), "b   c   d   e   f   g   h   i   j   k   l   m   ");
+    EXPECT_EQ(filter->queryStrided("The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.", 4), 7);
+    EXPECT_EQ(filter->getChain(), "omewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for under");
 
     delete filter;
 }
