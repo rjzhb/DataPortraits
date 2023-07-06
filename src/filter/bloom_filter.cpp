@@ -4,6 +4,7 @@
 
 #include "bloom_filter.h"
 #include <functional>
+#include <fstream>
 
 BloomFilter::BloomFilter(size_t size, size_t hash_function_amount)
         : size_(size), hash_function_amount_(hash_function_amount) {
@@ -45,6 +46,22 @@ auto BloomFilter::contains(const std::string &value) const -> bool {
     return true;
 }
 
-auto BloomFilter::setFilter(std::vector<char> &filter) -> void {
-    filter_ = filter;
+auto BloomFilter::readBinFileToFilter(const std::string &filename) -> void {
+    std::ifstream file(filename, std::ios::binary | std::ios::ate);
+    if (!file.is_open()) {
+        throw std::runtime_error("Failed to open file");
+    }
+
+    std::streamsize size = file.tellg();
+    if (size < 0) {
+        throw std::runtime_error("Failed to get file size");
+    }
+
+    file.seekg(0, std::ios::beg);
+    std::vector<char> buffer(size);
+    if (!file.read(buffer.data(), size)) {
+        throw std::runtime_error("Failed to read file");
+    }
+
+    filter_ = buffer;
 }

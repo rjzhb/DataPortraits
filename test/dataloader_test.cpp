@@ -2,7 +2,7 @@
 // Created by 86183 on 2023/7/6.
 //
 #include "gtest/gtest.h"
-#include "../src/dataloader/dataloader.h"
+#include "dataloader.h"
 
 TEST(DataLoaderTest, ReadAndWrite) {
     std::string filename = "test.bin";
@@ -14,7 +14,7 @@ TEST(DataLoaderTest, ReadAndWrite) {
     outfile.write(block.data(), block.size());
     outfile.close();
 
-    // Read the test file and write it to a new file
+    // Read the test file and write data of bloomfilter hash into a new file
     DataLoader loader(filename, 2048);
     while (loader.hasNextBlock()) {
         std::vector<char> block = loader.getNextBlock();
@@ -22,7 +22,7 @@ TEST(DataLoaderTest, ReadAndWrite) {
     }
 
     loader.writeFilterToFile("hashtable.bin");
-    // Compare the two files
+    // Compare the two filter
     auto temp = loader.readFileToVector("hashtable.bin");
 
     EXPECT_EQ(temp, loader.getFilter());

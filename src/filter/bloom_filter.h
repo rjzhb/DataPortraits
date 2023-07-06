@@ -27,7 +27,7 @@ public:
 
     auto contains(const std::string &value) const -> bool;
 
-    auto setFilter(std::vector<char> &filter) -> void;
+    auto readBinFileToFilter(const std::string &filename) -> void;
 
 private:
     std::vector<char> filter_;
