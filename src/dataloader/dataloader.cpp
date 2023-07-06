@@ -59,7 +59,6 @@ std::vector<char> DataLoader::getNextBlock() {
 
 
 void DataLoader::processBlock(std::vector<char> &block, size_t stride, size_t tile_size) {
-    // 将 block 这个字符串，每 strided * tile_size 个字符串
     for (size_t i = 0; i < block.size(); i += stride * tile_size) {
         if (i + stride * tile_size > block.size()) {
             break;
