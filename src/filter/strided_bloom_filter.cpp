@@ -29,7 +29,7 @@ auto StridedBloomFilter::insertStrided(const std::string &value, size_t stride) 
 
 auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) const -> int {
     int matches = 0;
-    std::string chain;
+    std::string chain_list;
     spdlog::info("stride is {}, tile size is {}", stride, tile_size_);
 
     for (size_t i = 0; i < value.size() - stride * tile_size_ + 1; ++i) {
@@ -39,10 +39,11 @@ auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) c
         if (contains(tile_str)) {
             ++matches;
             //chaining
-
+            chain_list.append(tile_str);
         }
     }
-
+    //save the last result
+    chain_list_ = std::move(chain_list);
     return matches;
 }
 
