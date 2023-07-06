@@ -8,12 +8,14 @@ Paper: https://arxiv.org/abs/2303.03919
 
 ![image](https://github.com/rjzhb/DataPortraits/assets/105226542/c02dddab-827f-435b-87fd-c987f4180401)
 
-## Requires spdlog, Google-test
+## Requires spdlog, Google-test, MurmurHash3
 ```shell
 sudo apt-get install libspdlog-dev.
 
 sudo apt-get install libgtest-dev.
 export CMAKE_PREFIX_PATH=/path/to/gtest:$CMAKE_PREFIX_PATH
+
+sudo apt-get install libmurmurhash3-dev
 ```
 
 ## Code Structure
