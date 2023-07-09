@@ -13,10 +13,10 @@ TEST(StridedBloomFilterTest, InsertStridedAndQueryStrided) {
     filter->insertStrided("foo bar", 3);
 
     EXPECT_EQ(filter->queryStrided("hello world", 3), 3);
-    EXPECT_EQ(filter->getChain(), "hello wor");
+    EXPECT_TRUE(filter->getChain() == (std::vector<std::string>{"hel", "wor"}));
     EXPECT_EQ(filter->queryStrided("worldfoo", 3), 2);
     // the risk of missing some string of interest if it is split by a tile boundary in the corpus
-    EXPECT_EQ(filter->getChain(), "worfoo");
+    EXPECT_TRUE(filter->getChain() == (std::vector<std::string>{"hel", "wor", "foo"}));
     delete filter;
 }
 
@@ -39,7 +39,7 @@ TEST(StridedBloomFilterTest2, InsertStridedAndQueryStridedInPaperCase) {
     filter->insertStrided("The key is: a   b   c   d   e   f   g   h   i   j   k   l   m   n   ", 4);
 
     EXPECT_EQ(filter->queryStrided("a   b   c   d   e   f   g   h   i   j   k   l   m   n   ", 4), 3);
-    EXPECT_EQ(filter->getChain(), "b   c   d   e   f   g   h   i   j   k   l   m   ");
+    EXPECT_EQ(filter->getChain(), std::vector<std::string>{"b   c   d   e   f   g   h   i   j   k   l   m   "});
 
     delete filter;
 }
@@ -57,9 +57,12 @@ TEST(StridedBloomFilterTest3, case1) {
                           " Whiting School of Engineering, School of Medicine and the well-regarded Peabody Institute for music and dance. "
                           "Johns Hopkins Hospital is a top-ranked hospital with highly ranked specialties.", 4);
 
-    EXPECT_EQ(filter->queryStrided("The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.", 4), 7);
-    EXPECT_EQ(filter->getChain(), "omewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for under");
-
+    EXPECT_EQ(filter->queryStrided(
+            "The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.",
+            4), 7);
+    EXPECT_EQ(filter->getChain(),
+              std::vector<std::string>{
+                      "omewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for under"});
     delete filter;
 }
 

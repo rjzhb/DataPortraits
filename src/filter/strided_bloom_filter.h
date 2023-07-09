@@ -22,6 +22,8 @@ public:
     //gain the result of last query
     auto getChain() const -> std::vector<std::string>;
 
+    auto getLongestChain() const -> std::vector<std::string>;
+
     auto insertStrided(const std::string &value, size_t stride) -> void;
 
     auto queryStrided(const std::string &value, size_t stride) const -> int;

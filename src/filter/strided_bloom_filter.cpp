@@ -32,24 +32,50 @@ auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) c
     int matches = 0;
     spdlog::info("stride is {}, tile size is {}", stride, tile_size_);
 
+    std::cout << value.size() - stride * tile_size_ << std::endl;
     for (size_t i = 0; i < value.size() - stride * tile_size_ + 1; ++i) {
         std::string tile_str = value.substr(i, stride * tile_size_);
-        spdlog::info("string {} is being queried", tile_str);
+        spdlog::info("string {} is being queried, i = {}", tile_str, i);
 
+        bool merge_chain = false;
         if (contains(tile_str)) {
             ++matches;
             //chaining
-            if (calculateIndexDistance(temp_str_, tile_str) == temp_str_.size()) {
+            merge_chain = calculateIndexDistance(temp_str_, tile_str) == temp_str_.size();
+            if (merge_chain) {
                 temp_str_.append(tile_str);
             } else {
-                chain_list_.push_back(temp_str_);
+                spdlog::info("find a chain: {}", temp_str_);
+                if (!(!chain_list_.empty() && chain_list_.back() == temp_str_)) {
+                    chain_list_.push_back(temp_str_);
+                }
                 temp_str_ = "";
             }
+        }
+        if (i == value.size() - stride * tile_size_ && temp_str_ != "") {
+            spdlog::info("find a chain: {}", temp_str_);
+            chain_list_.push_back(temp_str_);
         }
     }
     return matches;
 }
 
 auto StridedBloomFilter::getChain() const -> std::vector<std::string> {
+    return chain_list_;
+}
+
+
+auto StridedBloomFilter::getLongestChain() const -> std::vector<std::string> {
+    std::vector<std::string> longest_chains;
+    auto max_length = std::max_element(chain_list_.begin(), chain_list_.end(),
+                                       [](const std::string &s1, const std::string &s2) {
+                                           return s1.length() < s2.length();
+                                       })->length();
+
+    for (const auto &s: chain_list_) {
+        if (s.length() == max_length) {
+            longest_chains.push_back(s);
+        }
+    }
     return chain_list_;
 }
