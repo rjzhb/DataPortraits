@@ -15,8 +15,6 @@ public:
     ~StridedBloomFilter();
     StridedBloomFilter(StridedBloomFilter &&other) noexcept;
 
-    auto operator=(StridedBloomFilter &&other) noexcept -> StridedBloomFilter &;
-
     //gain the result of last query
     auto getChain() const -> std::vector<std::string>;
     auto getLongestChain() const -> std::vector<std::string>;

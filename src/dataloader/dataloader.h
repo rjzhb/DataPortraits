@@ -33,9 +33,10 @@ private:
     std::vector<char> buffer_;
     std::vector<char> filter_;
 
+    size_t buffer_size_;
+    size_t current_pos_;
+    
     const size_t block_size_;
-    const size_t buffer_size_;
-    const size_t current_pos_;
     const size_t filter_size_{};
     const size_t stride_{};
     const size_t tile_size_{};
