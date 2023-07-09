@@ -7,7 +7,11 @@
 
 
 int main() {
-    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 20);
+    size_t filter_size = 10000;
+    size_t tile_size = 20;
+    size_t stride = 5;
+
+    auto *filter = new StridedBloomFilter(filter_size, HASH_FUNCTION_AMOUNT, tile_size);
 
     filter->readBinFileToFilter("../dataset/ag_news_csv/train.bin");
     filter->queryStrided(
@@ -21,7 +25,7 @@ int main() {
             "3 State grant to aid Lynn; Bank gives Salem \\$10k Central Square in Lynn should be looking a bit brighter. New sidewalks, curbs, fences, lights, landscaping, and road improvements are planned for the Gateway Artisan Block, a key area of the square, with \\$830,000 in state grant money given to Lynn last week.\n"
             "3 A New Legal Chapter for a 90's Flameout A lawsuit against Gary Winnick, the former chief of Global Crossing, refocuses attention on what Mr. Winnick knew about his company's finances as it imploded.\n"
             "3 Will Russia, the Oil Superpower, Flex Its Muscles? Russia is again emerging as a superpower - but the reason has less to do with nuclear weapons than with oil.",
-            5);
+            stride);
 
     auto longest_chain = filter->getLongestChain();
     for (size_t i = 0; i < longest_chain.size(); i++) {

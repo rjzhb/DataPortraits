@@ -19,7 +19,7 @@ auto StridedBloomFilter::operator=(StridedBloomFilter &&other) noexcept -> Strid
     return *this;
 }
 
-auto StridedBloomFilter::insertStrided(const std::string &value, size_t stride) -> void {
+auto StridedBloomFilter::insertStrided(std::string &value, size_t stride) -> void {
     for (size_t i = 0; i < value.size(); i += stride * tile_size_) {
         if (i + stride * tile_size_ > value.size()) {
             break;
@@ -28,14 +28,17 @@ auto StridedBloomFilter::insertStrided(const std::string &value, size_t stride) 
     }
 }
 
-auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) const -> int {
+auto StridedBloomFilter::queryStrided(std::string value, size_t stride) const -> int {
     int matches = 0;
     spdlog::info("stride is {}, tile size is {}", stride, tile_size_);
 
-    std::cout << value.size() - stride * tile_size_ << std::endl;
+    if (value.size() < stride * tile_size_) {
+        value.append(stride * tile_size_ - value.size(), ' ');
+    }
+
     for (size_t i = 0; i < value.size() - stride * tile_size_ + 1; ++i) {
         std::string tile_str = value.substr(i, stride * tile_size_);
-        spdlog::info("string {} is being queried, i = {}", tile_str, i);
+        spdlog::info("string [{}] is being queried, i = {}", tile_str, i);
 
         bool merge_chain = false;
         if (contains(tile_str)) {

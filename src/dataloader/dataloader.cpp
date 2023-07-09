@@ -2,6 +2,7 @@
 // Created by 86183 on 2023/7/5.
 //
 
+#include <spdlog/spdlog.h>
 #include "dataloader.h"
 
 DataLoader::DataLoader(const std::string &filename, size_t block_size, size_t filter_size, size_t stride,
@@ -75,14 +76,14 @@ void DataLoader::processBlock(std::vector<char> &block) {
         if (i + stride_ * tile_size_ < block.size()) {
             value = std::vector<char>(block.begin() + i, block.begin() + i + stride_ * tile_size_);
         } else {
+            spdlog::info("Block allocation is uneven.");
             value = std::vector<char>(block.begin() + i, block.end());
         }
 
         for (size_t j = 0; j < HASH_FUNCTION_AMOUNT; ++j) {
             std::string str(value.begin(), value.begin() + value.size());
-            size_t hash_value = std::hash<std::string>{}(str + std::to_string(j));
-            size_t index = hash_value % filter_size_;
-            filter_[index] = 1;
+            size_t hash = std::hash<std::string>{}(str + std::to_string(j)) % filter_size_;
+            filter_[hash] = 1;
         }
     }
 }

@@ -111,6 +111,16 @@ TEST(StridedBloomFilterTest5, case3) {
     delete filter;
 }
 
+TEST(StridedBloomFilterTest5, InsertStridedAndQueryStridedInPaperCase2) {
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 4);
+
+    filter->readBinFileToFilter("../../test/hashtable.bin");
+
+    EXPECT_EQ(filter->queryStrided("a   b   c   d   e   f   g   h   i   j   k   l   m   n   ", 4), 3);
+    EXPECT_EQ(filter->getChain(), std::vector<std::string>{"b   c   d   e   f   g   h   i   j   k   l   m   "});
+
+    delete filter;
+}
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
