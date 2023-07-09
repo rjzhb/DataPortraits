@@ -22,7 +22,6 @@ public:
     explicit TaskQueue(size_t capacity) : head_(0), tail_(0), queue_(capacity) {}
 
     auto push(const Task &task) -> void;
-
     auto pop(Task &task) -> bool;
 
     // Check if the queue is empty
