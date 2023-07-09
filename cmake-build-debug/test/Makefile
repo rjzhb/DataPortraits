@@ -111,64 +111,64 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/test_string_util.dir/rule:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_string_util.dir/rule
-.PHONY : test/CMakeFiles/test_string_util.dir/rule
+test/CMakeFiles/dataloader_test.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/dataloader_test.dir/rule
+.PHONY : test/CMakeFiles/dataloader_test.dir/rule
 
 # Convenience name for target.
-test_string_util: test/CMakeFiles/test_string_util.dir/rule
+dataloader_test: test/CMakeFiles/dataloader_test.dir/rule
 
-.PHONY : test_string_util
+.PHONY : dataloader_test
 
 # fast build rule for target.
-test_string_util/fast:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/build
-.PHONY : test_string_util/fast
+dataloader_test/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/dataloader_test.dir/build.make test/CMakeFiles/dataloader_test.dir/build
+.PHONY : dataloader_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/test_data_loader.dir/rule:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_data_loader.dir/rule
-.PHONY : test/CMakeFiles/test_data_loader.dir/rule
+test/CMakeFiles/strided_bloom_filter_test.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/strided_bloom_filter_test.dir/rule
+.PHONY : test/CMakeFiles/strided_bloom_filter_test.dir/rule
 
 # Convenience name for target.
-test_data_loader: test/CMakeFiles/test_data_loader.dir/rule
+strided_bloom_filter_test: test/CMakeFiles/strided_bloom_filter_test.dir/rule
 
-.PHONY : test_data_loader
+.PHONY : strided_bloom_filter_test
 
 # fast build rule for target.
-test_data_loader/fast:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/build
-.PHONY : test_data_loader/fast
+strided_bloom_filter_test/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/strided_bloom_filter_test.dir/build.make test/CMakeFiles/strided_bloom_filter_test.dir/build
+.PHONY : strided_bloom_filter_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/test_strided_bloom_filter.dir/rule:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_strided_bloom_filter.dir/rule
-.PHONY : test/CMakeFiles/test_strided_bloom_filter.dir/rule
+test/CMakeFiles/string_util_test.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/string_util_test.dir/rule
+.PHONY : test/CMakeFiles/string_util_test.dir/rule
 
 # Convenience name for target.
-test_strided_bloom_filter: test/CMakeFiles/test_strided_bloom_filter.dir/rule
+string_util_test: test/CMakeFiles/string_util_test.dir/rule
 
-.PHONY : test_strided_bloom_filter
+.PHONY : string_util_test
 
 # fast build rule for target.
-test_strided_bloom_filter/fast:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/build
-.PHONY : test_strided_bloom_filter/fast
+string_util_test/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/string_util_test.dir/build.make test/CMakeFiles/string_util_test.dir/build
+.PHONY : string_util_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/test_bloom_filter.dir/rule:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_bloom_filter.dir/rule
-.PHONY : test/CMakeFiles/test_bloom_filter.dir/rule
+test/CMakeFiles/bloom_filter_test.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/bloom_filter_test.dir/rule
+.PHONY : test/CMakeFiles/bloom_filter_test.dir/rule
 
 # Convenience name for target.
-test_bloom_filter: test/CMakeFiles/test_bloom_filter.dir/rule
+bloom_filter_test: test/CMakeFiles/bloom_filter_test.dir/rule
 
-.PHONY : test_bloom_filter
+.PHONY : bloom_filter_test
 
 # fast build rule for target.
-test_bloom_filter/fast:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/build
-.PHONY : test_bloom_filter/fast
+bloom_filter_test/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/bloom_filter_test.dir/build.make test/CMakeFiles/bloom_filter_test.dir/build
+.PHONY : bloom_filter_test/fast
 
 bloom_filter_test.o: bloom_filter_test.cpp.o
 
@@ -176,7 +176,7 @@ bloom_filter_test.o: bloom_filter_test.cpp.o
 
 # target to build an object file
 bloom_filter_test.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/bloom_filter_test.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/bloom_filter_test.dir/build.make test/CMakeFiles/bloom_filter_test.dir/bloom_filter_test.cpp.o
 .PHONY : bloom_filter_test.cpp.o
 
 bloom_filter_test.i: bloom_filter_test.cpp.i
@@ -185,7 +185,7 @@ bloom_filter_test.i: bloom_filter_test.cpp.i
 
 # target to preprocess a source file
 bloom_filter_test.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/bloom_filter_test.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/bloom_filter_test.dir/build.make test/CMakeFiles/bloom_filter_test.dir/bloom_filter_test.cpp.i
 .PHONY : bloom_filter_test.cpp.i
 
 bloom_filter_test.s: bloom_filter_test.cpp.s
@@ -194,7 +194,7 @@ bloom_filter_test.s: bloom_filter_test.cpp.s
 
 # target to generate assembly for a file
 bloom_filter_test.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/bloom_filter_test.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/bloom_filter_test.dir/build.make test/CMakeFiles/bloom_filter_test.dir/bloom_filter_test.cpp.s
 .PHONY : bloom_filter_test.cpp.s
 
 dataloader_test.o: dataloader_test.cpp.o
@@ -203,7 +203,7 @@ dataloader_test.o: dataloader_test.cpp.o
 
 # target to build an object file
 dataloader_test.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/dataloader_test.dir/build.make test/CMakeFiles/dataloader_test.dir/dataloader_test.cpp.o
 .PHONY : dataloader_test.cpp.o
 
 dataloader_test.i: dataloader_test.cpp.i
@@ -212,7 +212,7 @@ dataloader_test.i: dataloader_test.cpp.i
 
 # target to preprocess a source file
 dataloader_test.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/dataloader_test.dir/build.make test/CMakeFiles/dataloader_test.dir/dataloader_test.cpp.i
 .PHONY : dataloader_test.cpp.i
 
 dataloader_test.s: dataloader_test.cpp.s
@@ -221,7 +221,7 @@ dataloader_test.s: dataloader_test.cpp.s
 
 # target to generate assembly for a file
 dataloader_test.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/dataloader_test.dir/build.make test/CMakeFiles/dataloader_test.dir/dataloader_test.cpp.s
 .PHONY : dataloader_test.cpp.s
 
 strided_bloom_filter_test.o: strided_bloom_filter_test.cpp.o
@@ -230,7 +230,7 @@ strided_bloom_filter_test.o: strided_bloom_filter_test.cpp.o
 
 # target to build an object file
 strided_bloom_filter_test.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/strided_bloom_filter_test.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/strided_bloom_filter_test.dir/build.make test/CMakeFiles/strided_bloom_filter_test.dir/strided_bloom_filter_test.cpp.o
 .PHONY : strided_bloom_filter_test.cpp.o
 
 strided_bloom_filter_test.i: strided_bloom_filter_test.cpp.i
@@ -239,7 +239,7 @@ strided_bloom_filter_test.i: strided_bloom_filter_test.cpp.i
 
 # target to preprocess a source file
 strided_bloom_filter_test.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/strided_bloom_filter_test.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/strided_bloom_filter_test.dir/build.make test/CMakeFiles/strided_bloom_filter_test.dir/strided_bloom_filter_test.cpp.i
 .PHONY : strided_bloom_filter_test.cpp.i
 
 strided_bloom_filter_test.s: strided_bloom_filter_test.cpp.s
@@ -248,7 +248,7 @@ strided_bloom_filter_test.s: strided_bloom_filter_test.cpp.s
 
 # target to generate assembly for a file
 strided_bloom_filter_test.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/strided_bloom_filter_test.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/strided_bloom_filter_test.dir/build.make test/CMakeFiles/strided_bloom_filter_test.dir/strided_bloom_filter_test.cpp.s
 .PHONY : strided_bloom_filter_test.cpp.s
 
 string_util_test.o: string_util_test.cpp.o
@@ -257,7 +257,7 @@ string_util_test.o: string_util_test.cpp.o
 
 # target to build an object file
 string_util_test.cpp.o:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.o
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/string_util_test.dir/build.make test/CMakeFiles/string_util_test.dir/string_util_test.cpp.o
 .PHONY : string_util_test.cpp.o
 
 string_util_test.i: string_util_test.cpp.i
@@ -266,7 +266,7 @@ string_util_test.i: string_util_test.cpp.i
 
 # target to preprocess a source file
 string_util_test.cpp.i:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/string_util_test.dir/build.make test/CMakeFiles/string_util_test.dir/string_util_test.cpp.i
 .PHONY : string_util_test.cpp.i
 
 string_util_test.s: string_util_test.cpp.s
@@ -275,7 +275,7 @@ string_util_test.s: string_util_test.cpp.s
 
 # target to generate assembly for a file
 string_util_test.cpp.s:
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/string_util_test.dir/build.make test/CMakeFiles/string_util_test.dir/string_util_test.cpp.s
 .PHONY : string_util_test.cpp.s
 
 # Help Target
@@ -285,11 +285,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test_string_util"
-	@echo "... test_data_loader"
-	@echo "... test_strided_bloom_filter"
 	@echo "... edit_cache"
-	@echo "... test_bloom_filter"
+	@echo "... dataloader_test"
+	@echo "... strided_bloom_filter_test"
+	@echo "... string_util_test"
+	@echo "... bloom_filter_test"
 	@echo "... bloom_filter_test.o"
 	@echo "... bloom_filter_test.i"
 	@echo "... bloom_filter_test.s"

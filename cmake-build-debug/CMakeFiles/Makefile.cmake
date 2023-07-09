@@ -62,8 +62,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/DataPortraits.dir/DependInfo.cmake"
   "src/CMakeFiles/DataPortraits_lib.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_string_util.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_data_loader.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_strided_bloom_filter.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_bloom_filter.dir/DependInfo.cmake"
+  "test/CMakeFiles/dataloader_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/strided_bloom_filter_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/string_util_test.dir/DependInfo.cmake"
+  "test/CMakeFiles/bloom_filter_test.dir/DependInfo.cmake"
   )

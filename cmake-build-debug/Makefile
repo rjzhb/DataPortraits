@@ -137,56 +137,56 @@ DataPortraits_lib/fast:
 .PHONY : DataPortraits_lib/fast
 
 #=============================================================================
-# Target rules for targets named test_string_util
+# Target rules for targets named dataloader_test
 
 # Build rule for target.
-test_string_util: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_string_util
-.PHONY : test_string_util
+dataloader_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dataloader_test
+.PHONY : dataloader_test
 
 # fast build rule for target.
-test_string_util/fast:
-	$(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/build
-.PHONY : test_string_util/fast
+dataloader_test/fast:
+	$(MAKE) -f test/CMakeFiles/dataloader_test.dir/build.make test/CMakeFiles/dataloader_test.dir/build
+.PHONY : dataloader_test/fast
 
 #=============================================================================
-# Target rules for targets named test_data_loader
+# Target rules for targets named strided_bloom_filter_test
 
 # Build rule for target.
-test_data_loader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_data_loader
-.PHONY : test_data_loader
+strided_bloom_filter_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 strided_bloom_filter_test
+.PHONY : strided_bloom_filter_test
 
 # fast build rule for target.
-test_data_loader/fast:
-	$(MAKE) -f test/CMakeFiles/test_data_loader.dir/build.make test/CMakeFiles/test_data_loader.dir/build
-.PHONY : test_data_loader/fast
+strided_bloom_filter_test/fast:
+	$(MAKE) -f test/CMakeFiles/strided_bloom_filter_test.dir/build.make test/CMakeFiles/strided_bloom_filter_test.dir/build
+.PHONY : strided_bloom_filter_test/fast
 
 #=============================================================================
-# Target rules for targets named test_strided_bloom_filter
+# Target rules for targets named string_util_test
 
 # Build rule for target.
-test_strided_bloom_filter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_strided_bloom_filter
-.PHONY : test_strided_bloom_filter
+string_util_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 string_util_test
+.PHONY : string_util_test
 
 # fast build rule for target.
-test_strided_bloom_filter/fast:
-	$(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/build
-.PHONY : test_strided_bloom_filter/fast
+string_util_test/fast:
+	$(MAKE) -f test/CMakeFiles/string_util_test.dir/build.make test/CMakeFiles/string_util_test.dir/build
+.PHONY : string_util_test/fast
 
 #=============================================================================
-# Target rules for targets named test_bloom_filter
+# Target rules for targets named bloom_filter_test
 
 # Build rule for target.
-test_bloom_filter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_bloom_filter
-.PHONY : test_bloom_filter
+bloom_filter_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bloom_filter_test
+.PHONY : bloom_filter_test
 
 # fast build rule for target.
-test_bloom_filter/fast:
-	$(MAKE) -f test/CMakeFiles/test_bloom_filter.dir/build.make test/CMakeFiles/test_bloom_filter.dir/build
-.PHONY : test_bloom_filter/fast
+bloom_filter_test/fast:
+	$(MAKE) -f test/CMakeFiles/bloom_filter_test.dir/build.make test/CMakeFiles/bloom_filter_test.dir/build
+.PHONY : bloom_filter_test/fast
 
 benchmark.o: benchmark.cpp.o
 
@@ -360,10 +360,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... DataPortraits"
 	@echo "... DataPortraits_lib"
-	@echo "... test_string_util"
-	@echo "... test_data_loader"
-	@echo "... test_strided_bloom_filter"
-	@echo "... test_bloom_filter"
+	@echo "... dataloader_test"
+	@echo "... strided_bloom_filter_test"
+	@echo "... string_util_test"
+	@echo "... bloom_filter_test"
 	@echo "... benchmark.o"
 	@echo "... benchmark.i"
 	@echo "... benchmark.s"

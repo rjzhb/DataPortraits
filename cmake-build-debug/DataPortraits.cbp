@@ -149,8 +149,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_string_util">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_string_util" prefix_auto="0" extension_auto="0"/>
+			<Target title="dataloader_test">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/dataloader_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -171,14 +171,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_string_util"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 dataloader_test"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_string_util/fast">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_string_util" prefix_auto="0" extension_auto="0"/>
+			<Target title="dataloader_test/fast">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/dataloader_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -199,14 +199,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_string_util/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 dataloader_test/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_data_loader">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_data_loader" prefix_auto="0" extension_auto="0"/>
+			<Target title="strided_bloom_filter_test">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/strided_bloom_filter_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -227,14 +227,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_data_loader"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 strided_bloom_filter_test"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_data_loader/fast">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_data_loader" prefix_auto="0" extension_auto="0"/>
+			<Target title="strided_bloom_filter_test/fast">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/strided_bloom_filter_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -255,14 +255,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_data_loader/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 strided_bloom_filter_test/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_strided_bloom_filter">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_strided_bloom_filter" prefix_auto="0" extension_auto="0"/>
+			<Target title="string_util_test">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/string_util_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -283,14 +283,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_strided_bloom_filter"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 string_util_test"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_strided_bloom_filter/fast">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_strided_bloom_filter" prefix_auto="0" extension_auto="0"/>
+			<Target title="string_util_test/fast">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/string_util_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -311,14 +311,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_strided_bloom_filter/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 string_util_test/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_bloom_filter">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_bloom_filter" prefix_auto="0" extension_auto="0"/>
+			<Target title="bloom_filter_test">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/bloom_filter_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -339,14 +339,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_bloom_filter"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 bloom_filter_test"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_bloom_filter/fast">
-				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_bloom_filter" prefix_auto="0" extension_auto="0"/>
+			<Target title="bloom_filter_test/fast">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/bloom_filter_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -367,7 +367,7 @@
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_bloom_filter/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 bloom_filter_test/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -422,16 +422,16 @@
 			<Option target="DataPortraits_lib"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/bloom_filter_test.cpp">
-			<Option target="test_bloom_filter"/>
+			<Option target="bloom_filter_test"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp">
-			<Option target="test_data_loader"/>
+			<Option target="dataloader_test"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/strided_bloom_filter_test.cpp">
-			<Option target="test_strided_bloom_filter"/>
+			<Option target="strided_bloom_filter_test"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/string_util_test.cpp">
-			<Option target="test_string_util"/>
+			<Option target="string_util_test"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
