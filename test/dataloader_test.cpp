@@ -54,9 +54,9 @@ TEST(DataLoaderTest, ParallelWriteFilterToFile) {
     std::string filename = "../../dataset/ag_news_csv/train.txt";
 
     //Blocksize should ideally be exactly divided by stripe * tile_ Size
-    size_t stride = 5;
+    size_t stride = 20;
     size_t tile_size = 20;
-    size_t filter_size = 10000;
+    size_t filter_size = 1000;
     size_t block_size = DATASET_SIZE / (stride * tile_size) * 1000;
     // Read the test file and write data of bloomfilter hash into a new file
     DataLoader loader(filename, block_size, filter_size, stride, tile_size);

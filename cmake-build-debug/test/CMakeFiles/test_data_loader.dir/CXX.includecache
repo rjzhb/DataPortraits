@@ -35,8 +35,6 @@ thread
 -
 future
 -
-omp.h
--
 gtest/gtest.h
 /home/rjzhb/Project/DataPortraits/test/gtest/gtest.h
 dataloader.h
