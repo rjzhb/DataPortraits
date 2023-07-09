@@ -17,6 +17,10 @@ public:
 
     ~DataLoader();
 
+    auto getFilter() const -> std::vector<char>;
+
+    auto getCurrentPos() const -> size_t;
+
     auto hasNextBlock() const -> bool;
 
     auto getNextBlock() -> std::vector<char>;
@@ -27,18 +31,16 @@ public:
 
     static auto readFileToVector(const std::string &filename) -> std::vector<char>;
 
-    auto getFilter() const -> std::vector<char>;
-
-    auto getCurrentPos() const -> size_t;
-
 private:
     std::ifstream input_stream_;
     std::ofstream output_stream_;
-    size_t block_size_;
+
     std::vector<char> buffer_;
+    std::vector<char> filter_;
+
+    size_t block_size_;
     size_t buffer_size_;
     size_t current_pos_;
-    std::vector<char> filter_;
     size_t filter_size_{};
     size_t stride_{};
     size_t tile_size_{};

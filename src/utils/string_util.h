@@ -5,13 +5,9 @@
 #ifndef DATAPORTRAITS_STRING_UTIL_H
 #define DATAPORTRAITS_STRING_UTIL_H
 
-
 #include <string>
 
-int calculateIndexDistance(const std::string& str1, const std::string& str2);
+auto calculateIndexDistance(const std::string &str1, const std::string &str2) -> int;
 
-bool isDistanceN(const std::string& str1, const std::string& str2, size_t n);
-
-int countOverlap(const std::string& str1, const std::string& str2, size_t n);
 
 #endif //DATAPORTRAITS_STRING_UTIL_H

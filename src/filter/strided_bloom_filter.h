@@ -30,9 +30,10 @@ public:
 
 private:
     mutable std::vector<std::string> chain_list_;
+    mutable std::string temp_str_;
+
     //size of tile
     size_t tile_size_{};
-    mutable std::string temp_str_;
 };
 
 

@@ -38,11 +38,11 @@ DataLoader::~DataLoader() {
     output_stream_.close();
 }
 
-bool DataLoader::hasNextBlock() const {
+auto DataLoader::hasNextBlock() const -> bool {
     return current_pos_ < buffer_size_ || !input_stream_.eof();
 }
 
-std::vector<char> DataLoader::getNextBlock() {
+auto DataLoader::getNextBlock() -> std::vector<char> {
     std::vector<char> block;
     size_t block_size = std::min(buffer_size_ - current_pos_, block_size_);
 
@@ -66,7 +66,7 @@ std::vector<char> DataLoader::getNextBlock() {
 }
 
 
-void DataLoader::processBlock(std::vector<char> &block) {
+auto DataLoader::processBlock(std::vector<char> &block) -> void {
     for (size_t i = 0; i < block.size(); i += stride_ * tile_size_) {
         if (i + stride_ * tile_size_ > block.size()) {
             break;
@@ -88,7 +88,7 @@ void DataLoader::processBlock(std::vector<char> &block) {
     }
 }
 
-void DataLoader::readBuffer(size_t start_pos) {
+auto DataLoader::readBuffer(size_t start_pos) -> void {
     input_stream_.seekg(start_pos);
     input_stream_.read(buffer_.data(), block_size_);
     buffer_size_ = input_stream_.gcount();
@@ -96,7 +96,7 @@ void DataLoader::readBuffer(size_t start_pos) {
 }
 
 
-void DataLoader::writeFilterToFile(const std::string &filename) {
+auto DataLoader::writeFilterToFile(const std::string &filename) -> void {
     // Open the output file stream
     std::ofstream outfile(filename, std::ios::out | std::ios::binary);
     if (!outfile.is_open()) {
@@ -110,7 +110,7 @@ void DataLoader::writeFilterToFile(const std::string &filename) {
     outfile.close();
 }
 
-std::vector<char> DataLoader::readFileToVector(const std::string &filename) {
+auto DataLoader::readFileToVector(const std::string &filename) -> std::vector<char> {
     std::ifstream file(filename, std::ios::binary | std::ios::ate);
     if (!file.is_open()) {
         throw std::runtime_error("Failed to open file");

@@ -21,21 +21,22 @@ class TaskQueue {
 public:
     explicit TaskQueue(size_t capacity) : head_(0), tail_(0), queue_(capacity) {}
 
-    void push(const Task &task);
+    auto push(const Task &task) -> void;
 
-    bool pop(Task &task);
+    auto pop(Task &task) -> bool;
 
     // Check if the queue is empty
-    bool empty() const;
+    auto empty() const -> bool;
 
 
 private:
     std::atomic<size_t> head_{0};
     std::atomic<size_t> tail_{0};
+
     std::vector<Task> queue_;
 };
 
 
-void process_worker(DataLoader &loader, TaskQueue &queue);
+auto process_worker(DataLoader &loader, TaskQueue &queue) -> void;
 
 #endif //DATAPORTRAITS_TASKQUEUE_H

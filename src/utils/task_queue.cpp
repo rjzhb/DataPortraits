@@ -3,20 +3,20 @@
 //
 #include "task_queue.h"
 
-void process_worker(DataLoader& loader, TaskQueue& queue) {
+auto process_worker(DataLoader &loader, TaskQueue &queue) -> void {
     Task task;
     while (queue.pop(task)) {
         loader.processBlock(task.data);
     }
 }
 
-void TaskQueue::push(const Task& task) {
+auto TaskQueue::push(const Task &task) -> void {
     size_t tail = tail_.load(std::memory_order_relaxed);
     queue_[tail] = task;
     tail_.store((tail + 1) % queue_.size(), std::memory_order_release);
 }
 
-bool TaskQueue::pop(Task& task) {
+auto TaskQueue::pop(Task &task) -> bool {
     size_t head = head_.load(std::memory_order_relaxed);
     if (head == tail_.load(std::memory_order_acquire)) {
         return false;
@@ -27,6 +27,6 @@ bool TaskQueue::pop(Task& task) {
 }
 
 
-bool TaskQueue::empty() const {
+auto TaskQueue::empty() const -> bool {
     return head_.load(std::memory_order_relaxed) == tail_.load(std::memory_order_relaxed);
 }
