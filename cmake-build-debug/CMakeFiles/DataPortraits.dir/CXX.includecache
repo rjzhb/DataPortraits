@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../src/utils/string_util.h
-string
--
+../src/common/define.h
 
-/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h
+../src/filter/bloom_filter.h
 bitset
 -
 iostream
@@ -22,15 +20,21 @@ string
 functional
 -
 
-/home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp
-strided_bloom_filter.h
-/home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.h
+../src/filter/strided_bloom_filter.h
+bloom_filter.h
+../src/filter/bloom_filter.h
+
+/home/rjzhb/Project/DataPortraits/benchmark.cpp
+fstream
+-
+iostream
+-
+string
+-
 spdlog/spdlog.h
 -
-string_util.h
-/home/rjzhb/Project/DataPortraits/src/filter/string_util.h
-
-/home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.h
-bloom_filter.h
-/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.h
+strided_bloom_filter.h
+/home/rjzhb/Project/DataPortraits/strided_bloom_filter.h
+define.h
+/home/rjzhb/Project/DataPortraits/define.h
 
