@@ -4,10 +4,11 @@
 
 #include "dataloader.h"
 
-DataLoader::DataLoader(const std::string &filename, size_t block_size, size_t stride,
+DataLoader::DataLoader(const std::string &filename, size_t block_size, size_t filter_size, size_t stride,
                        size_t tile_size) :
         input_stream_(filename, std::ios::binary),
         stride_(stride),
+        filter_size_(filter_size),
         tile_size_(tile_size),
         block_size_(block_size),
         output_stream_(filename + ".out", std::ios::binary),
@@ -15,7 +16,7 @@ DataLoader::DataLoader(const std::string &filename, size_t block_size, size_t st
         buffer_size_(0),
         current_pos_(0) {
 
-    filter_.resize(DATASET_SIZE / (stride_ * tile_size_));
+    filter_.resize(filter_size_);
 
     // Check if the file is opened successfully
     if (!input_stream_.is_open()) {
@@ -80,8 +81,8 @@ void DataLoader::processBlock(std::vector<char> &block) {
         for (size_t j = 0; j < HASH_FUNCTION_AMOUNT; ++j) {
             std::string str(value.begin(), value.begin() + value.size());
             size_t hash_value = std::hash<std::string>{}(str + std::to_string(j));
-            size_t index = hash_value % filter_.size();
-            filter_[index] = true;
+            size_t index = hash_value % filter_size_;
+            filter_[index] = 1;
         }
     }
 }

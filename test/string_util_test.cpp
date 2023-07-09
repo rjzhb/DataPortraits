@@ -15,8 +15,6 @@ TEST(StringUtilTest, TestIndexDistance) {
     EXPECT_EQ(calculateIndexDistance(s1, s2), 2);
     EXPECT_EQ(calculateIndexDistance(s1, s3), 4);
     EXPECT_EQ(calculateIndexDistance(s1, s4), 4);
-
-
 }
 
 TEST(StringUtilTest, TestIndexDistance2) {
@@ -27,8 +25,6 @@ TEST(StringUtilTest, TestIndexDistance2) {
     std::string a2 = "";
     EXPECT_EQ(calculateIndexDistance(k1, k2), 0);
     EXPECT_EQ(calculateIndexDistance(a1, a2), 3);
-
-
 }
 
 TEST(StringUtilTest, TestIndexDistance3) {
@@ -38,6 +34,13 @@ TEST(StringUtilTest, TestIndexDistance3) {
 
     EXPECT_EQ(calculateIndexDistance(s1, s2), 1);
     EXPECT_EQ(calculateIndexDistance(s1, s3), 2);
+}
 
+TEST(StringUtilTest, TestSimpleChar2String) {
+    std::vector<char> block{'a', 'b', '\0', ' ', '4', '5'};
+    std::vector<char> value = std::vector<char>(block.begin(), block.end());
+    std::string str(value.begin(), value.begin() + value.size());
 
+    std::cout << block.data() << std::endl;
+    std::cout << str << std::endl;
 }

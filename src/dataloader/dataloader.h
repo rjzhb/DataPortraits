@@ -12,7 +12,7 @@
 
 class DataLoader {
 public:
-    DataLoader(const std::string &filename, size_t block_size, size_t stride,
+    DataLoader(const std::string &filename, size_t block_size, size_t filter_size, size_t stride,
                size_t tile_size_);
 
     ~DataLoader();
@@ -39,7 +39,7 @@ private:
     size_t buffer_size_;
     size_t current_pos_;
     std::vector<char> filter_;
-
+    size_t filter_size_{};
     size_t stride_{};
     size_t tile_size_{};
 

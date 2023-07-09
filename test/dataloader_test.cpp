@@ -8,18 +8,18 @@
 #include "task_queue.h"
 
 TEST(DataLoaderTest, ReadAndWrite) {
-    std::string filename = "test.bin";
+    std::string filename = "../../test/test.bin";
 
     // Read the test file and write data of bloomfilter hash into a new file
-    DataLoader loader(filename, 2048, 5, 4);
+    DataLoader loader(filename, 2048, 4, 1000, 4);
     while (loader.hasNextBlock()) {
         std::vector<char> block = loader.getNextBlock();
         loader.processBlock(block);
     }
 
-    loader.writeFilterToFile("hashtable.bin");
+    loader.writeFilterToFile("../../test/hashtable.bin");
     // Compare the two filter
-    auto temp = loader.readFileToVector("hashtable.bin");
+    auto temp = loader.readFileToVector("../../test/hashtable.bin");
 
     EXPECT_EQ(temp, loader.getFilter());
 }
@@ -32,7 +32,7 @@ TEST(DataLoaderTest, WriteFilterToFile) {
     size_t tile_size = 20;
 
     // Read the test file and write data of bloomfilter hash into a new file
-    DataLoader loader(filename, DATASET_SIZE / (stride * tile_size) * 1000, stride, tile_size);
+    DataLoader loader(filename, DATASET_SIZE / (stride * tile_size) * 1000, 1000, stride, tile_size);
     // Create a task queue and thread pool for processing data blocks
     TaskQueue queue(100);
     std::vector<std::future<void>> futures;

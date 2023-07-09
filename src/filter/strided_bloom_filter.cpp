@@ -52,6 +52,9 @@ auto StridedBloomFilter::queryStrided(const std::string &value, size_t stride) c
                 temp_str_ = "";
             }
         }
+        if (i == value.size() - stride * tile_size_) {
+            std::cout << "get" << std::endl;
+        }
         if (i == value.size() - stride * tile_size_ && temp_str_ != "") {
             spdlog::info("find a chain: {}", temp_str_);
             chain_list_.push_back(temp_str_);

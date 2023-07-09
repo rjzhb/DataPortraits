@@ -1,13 +1,15 @@
 //
 // Created by 86183 on 2023/7/4.
 //
+#include <spdlog/spdlog.h>
 #include "gtest/gtest.h"
 #include "bloom_filter.h"
 #include "strided_bloom_filter.h"
+#include "define.h"
 
 // Test StridedBloomFilter
 TEST(StridedBloomFilterTest, InsertStridedAndQueryStrided) {
-    auto *filter = new StridedBloomFilter(1000, 5, 1);
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 1);
 
     filter->insertStrided("hello world", 3);
     filter->insertStrided("foo bar", 3);
@@ -34,7 +36,7 @@ TEST(StridedBloomFilterTest, InsertStridedAndQueryStrided) {
 5.Matches:   |b|c|d|e|f|g|h|i|j|k|l|m|
  */
 TEST(StridedBloomFilterTest2, InsertStridedAndQueryStridedInPaperCase) {
-    auto *filter = new StridedBloomFilter(1000, 5, 4);
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 4);
 
     filter->insertStrided("The key is: a   b   c   d   e   f   g   h   i   j   k   l   m   n   ", 4);
 
@@ -45,7 +47,7 @@ TEST(StridedBloomFilterTest2, InsertStridedAndQueryStridedInPaperCase) {
 }
 
 TEST(StridedBloomFilterTest3, case1) {
-    auto *filter = new StridedBloomFilter(1000, 5, 4);
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 4);
 
     filter->insertStrided("Johns Hopkins University is divided into nine schools, "
                           "five of which serve undergraduates. "
@@ -63,6 +65,49 @@ TEST(StridedBloomFilterTest3, case1) {
     EXPECT_EQ(filter->getChain(),
               std::vector<std::string>{
                       "omewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for under"});
+
+    delete filter;
+}
+
+TEST(StridedBloomFilterTest4, case2) {
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 4);
+
+    filter->insertStrided("Johns Hopkins University is divided into nine schools, "
+                          "five of which serve undergraduates. The Homewood Campus, "
+                          "one of the university’s four campuses in and around Baltimore, "
+                          "is the primary campus for undergraduates. Freshmen and sophomores "
+                          "are required to live on campus. More than 1,300 students participate in the Greek community."
+                          " Hopkins also has additional campuses for its School of Advanced International Studies in Washington, D.C."
+                          "; Bologna, Italy; and Nanjing, China. Hopkins’ graduate programs include the top-ranked Bloomberg School of Public Health and the highly ranked School of Education, "
+                          "Whiting School of Engineering, School of Medicine and the well-regarded Peabody Institute for music and dance. "
+                          "Johns Hopkins Hospital is a top-ranked hospital with highly ranked specialties. ",
+                          4);
+    filter->queryStrided(
+            "The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.",
+            4);
+
+    auto longest_chain = filter->getLongestChain();
+    for (size_t i = 0; i < longest_chain.size(); i++) {
+        spdlog::info("longest chain {}: {}", i, longest_chain[i]);
+    }
+
+    filter->clear();
+    delete filter;
+}
+
+TEST(StridedBloomFilterTest5, case3) {
+    auto *filter = new StridedBloomFilter(1000, HASH_FUNCTION_AMOUNT, 4);
+
+    filter->readBinFileToFilter("../../test/hashtable.bin");
+    filter->queryStrided(
+            "The Homewood Campus, one of the university’s four campuses in and around Baltimore, is the primary campus for undergraduates.",
+            4);
+    auto longest_chain = filter->getLongestChain();
+    for (size_t i = 0; i < longest_chain.size(); i++) {
+        spdlog::info("longest chain {}: {}", i, longest_chain[i]);
+    }
+
+    filter->clear();
     delete filter;
 }
 
