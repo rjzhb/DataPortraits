@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataPortraits.dir/src/dataloader/dataloader.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.o"
+  "CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.o"
   "DataPortraits"
   "DataPortraits.pdb"
 )

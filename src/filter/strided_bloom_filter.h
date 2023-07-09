@@ -20,16 +20,17 @@ public:
     auto operator=(StridedBloomFilter &&other) noexcept -> StridedBloomFilter &;
 
     //gain the result of last query
-    auto getChain() const -> std::string;
+    auto getChain() const -> std::vector<std::string>;
 
     auto insertStrided(const std::string &value, size_t stride) -> void;
 
     auto queryStrided(const std::string &value, size_t stride) const -> int;
 
 private:
-    mutable std::string chain_list_;
+    mutable std::vector<std::string> chain_list_;
     //size of tile
     size_t tile_size_{};
+    mutable std::string temp_str_;
 };
 
 

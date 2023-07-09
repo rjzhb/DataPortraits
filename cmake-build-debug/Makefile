@@ -137,6 +137,19 @@ DataPortraits_lib/fast:
 .PHONY : DataPortraits_lib/fast
 
 #=============================================================================
+# Target rules for targets named test_string_util
+
+# Build rule for target.
+test_string_util: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_string_util
+.PHONY : test_string_util
+
+# fast build rule for target.
+test_string_util/fast:
+	$(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/build
+.PHONY : test_string_util/fast
+
+#=============================================================================
 # Target rules for targets named test_data_loader
 
 # Build rule for target.
@@ -283,6 +296,33 @@ src/filter/strided_bloom_filter.cpp.s:
 	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.s
 .PHONY : src/filter/strided_bloom_filter.cpp.s
 
+src/utils/string_util.o: src/utils/string_util.cpp.o
+
+.PHONY : src/utils/string_util.o
+
+# target to build an object file
+src/utils/string_util.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.o
+.PHONY : src/utils/string_util.cpp.o
+
+src/utils/string_util.i: src/utils/string_util.cpp.i
+
+.PHONY : src/utils/string_util.i
+
+# target to preprocess a source file
+src/utils/string_util.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.i
+.PHONY : src/utils/string_util.cpp.i
+
+src/utils/string_util.s: src/utils/string_util.cpp.s
+
+.PHONY : src/utils/string_util.s
+
+# target to generate assembly for a file
+src/utils/string_util.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.s
+.PHONY : src/utils/string_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -293,6 +333,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... DataPortraits"
 	@echo "... DataPortraits_lib"
+	@echo "... test_string_util"
 	@echo "... test_data_loader"
 	@echo "... test_strided_bloom_filter"
 	@echo "... test_bloom_filter"
@@ -308,6 +349,9 @@ help:
 	@echo "... src/filter/strided_bloom_filter.o"
 	@echo "... src/filter/strided_bloom_filter.i"
 	@echo "... src/filter/strided_bloom_filter.s"
+	@echo "... src/utils/string_util.o"
+	@echo "... src/utils/string_util.i"
+	@echo "... src/utils/string_util.s"
 .PHONY : help
 
 

@@ -29,6 +29,12 @@ public:
 
     auto readBinFileToFilter(const std::string &filename) -> void;
 
+    auto clear() -> void {
+        filter_.clear();
+        filter_.resize(size_);
+    }
+
+
 private:
     std::vector<char> filter_;
     size_t size_{};

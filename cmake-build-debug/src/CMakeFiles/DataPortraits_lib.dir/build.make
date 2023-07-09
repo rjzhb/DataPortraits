@@ -60,47 +60,61 @@ include src/CMakeFiles/DataPortraits_lib.dir/flags.make
 src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o: src/CMakeFiles/DataPortraits_lib.dir/flags.make
 src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o: ../src/dataloader/dataloader.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o -c /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o -c /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp
 
 src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.i"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp > CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp > CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.i
 
 src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.s"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp -o CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp -o CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.s
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o: src/CMakeFiles/DataPortraits_lib.dir/flags.make
 src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o: ../src/filter/bloom_filter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o -c /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o -c /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.i"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp > CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp > CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.i
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.s"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp -o CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp -o CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.s
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o: src/CMakeFiles/DataPortraits_lib.dir/flags.make
 src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o: ../src/filter/strided_bloom_filter.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o -c /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o -c /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.i"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp > CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp > CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.i
 
 src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp -o CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp -o CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s
+
+src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o: src/CMakeFiles/DataPortraits_lib.dir/flags.make
+src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o: ../src/utils/string_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o"
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o -c /home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp
+
+src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.i"
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp > CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.i
+
+src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.s"
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp -o CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.s
 
 # Object files for target DataPortraits_lib
 DataPortraits_lib_OBJECTS = \
 "CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o" \
 "CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o" \
-"CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o"
+"CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o" \
+"CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o"
 
 # External object files for target DataPortraits_lib
 DataPortraits_lib_EXTERNAL_OBJECTS =
@@ -108,9 +122,10 @@ DataPortraits_lib_EXTERNAL_OBJECTS =
 src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o
 src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o
 src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o
+src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o
 src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/build.make
 src/libDataPortraits_lib.a: src/CMakeFiles/DataPortraits_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libDataPortraits_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libDataPortraits_lib.a"
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/DataPortraits_lib.dir/cmake_clean_target.cmake
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DataPortraits_lib.dir/link.txt --verbose=$(VERBOSE)
 

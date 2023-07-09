@@ -206,6 +206,33 @@ filter/strided_bloom_filter.cpp.s:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.s
 .PHONY : filter/strided_bloom_filter.cpp.s
 
+utils/string_util.o: utils/string_util.cpp.o
+
+.PHONY : utils/string_util.o
+
+# target to build an object file
+utils/string_util.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o
+.PHONY : utils/string_util.cpp.o
+
+utils/string_util.i: utils/string_util.cpp.i
+
+.PHONY : utils/string_util.i
+
+# target to preprocess a source file
+utils/string_util.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.i
+.PHONY : utils/string_util.cpp.i
+
+utils/string_util.s: utils/string_util.cpp.s
+
+.PHONY : utils/string_util.s
+
+# target to generate assembly for a file
+utils/string_util.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.s
+.PHONY : utils/string_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,6 +251,9 @@ help:
 	@echo "... filter/strided_bloom_filter.o"
 	@echo "... filter/strided_bloom_filter.i"
 	@echo "... filter/strided_bloom_filter.s"
+	@echo "... utils/string_util.o"
+	@echo "... utils/string_util.i"
+	@echo "... utils/string_util.s"
 .PHONY : help
 
 

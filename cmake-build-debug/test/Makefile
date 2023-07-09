@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/test_string_util.dir/rule:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_string_util.dir/rule
+.PHONY : test/CMakeFiles/test_string_util.dir/rule
+
+# Convenience name for target.
+test_string_util: test/CMakeFiles/test_string_util.dir/rule
+
+.PHONY : test_string_util
+
+# fast build rule for target.
+test_string_util/fast:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/build
+.PHONY : test_string_util/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_data_loader.dir/rule:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_data_loader.dir/rule
 .PHONY : test/CMakeFiles/test_data_loader.dir/rule
@@ -236,6 +251,33 @@ strided_bloom_filter_test.cpp.s:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_strided_bloom_filter.dir/build.make test/CMakeFiles/test_strided_bloom_filter.dir/strided_bloom_filter_test.cpp.s
 .PHONY : strided_bloom_filter_test.cpp.s
 
+string_util_test.o: string_util_test.cpp.o
+
+.PHONY : string_util_test.o
+
+# target to build an object file
+string_util_test.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.o
+.PHONY : string_util_test.cpp.o
+
+string_util_test.i: string_util_test.cpp.i
+
+.PHONY : string_util_test.i
+
+# target to preprocess a source file
+string_util_test.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.i
+.PHONY : string_util_test.cpp.i
+
+string_util_test.s: string_util_test.cpp.s
+
+.PHONY : string_util_test.s
+
+# target to generate assembly for a file
+string_util_test.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test_string_util.dir/build.make test/CMakeFiles/test_string_util.dir/string_util_test.cpp.s
+.PHONY : string_util_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,6 +285,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_string_util"
 	@echo "... test_data_loader"
 	@echo "... test_strided_bloom_filter"
 	@echo "... edit_cache"
@@ -256,6 +299,9 @@ help:
 	@echo "... strided_bloom_filter_test.o"
 	@echo "... strided_bloom_filter_test.i"
 	@echo "... strided_bloom_filter_test.s"
+	@echo "... string_util_test.o"
+	@echo "... string_util_test.i"
+	@echo "... string_util_test.s"
 .PHONY : help
 
 

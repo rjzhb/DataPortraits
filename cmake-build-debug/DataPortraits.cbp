@@ -47,14 +47,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataPortraits"/>
@@ -73,14 +75,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataPortraits/fast"/>
@@ -99,14 +103,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 DataPortraits_lib"/>
@@ -125,20 +131,78 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 DataPortraits_lib/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_string_util">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_string_util" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_string_util"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_string_util/fast">
+				<Option output="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/test_string_util" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/rjzhb/Project/DataPortraits/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_string_util/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_data_loader">
@@ -151,14 +215,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_data_loader"/>
@@ -177,14 +243,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_data_loader/fast"/>
@@ -203,14 +271,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_strided_bloom_filter"/>
@@ -229,14 +299,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_strided_bloom_filter/fast"/>
@@ -255,14 +327,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_bloom_filter"/>
@@ -281,14 +355,16 @@
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/filter"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/common"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/src/dataloader"/>
+					<Add directory="/home/rjzhb/Project/DataPortraits/src/utils"/>
 					<Add directory="/home/rjzhb/Project/DataPortraits/third_party/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/home/rjzhb/Project/DataPortraits/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 test_bloom_filter/fast"/>
@@ -329,6 +405,14 @@
 			<Option target="DataPortraits"/>
 			<Option target="DataPortraits_lib"/>
 		</Unit>
+		<Unit filename="/home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp">
+			<Option target="DataPortraits"/>
+			<Option target="DataPortraits_lib"/>
+		</Unit>
+		<Unit filename="/home/rjzhb/Project/DataPortraits/src/utils/string_util.h">
+			<Option target="DataPortraits"/>
+			<Option target="DataPortraits_lib"/>
+		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/bloom_filter_test.cpp">
 			<Option target="test_bloom_filter"/>
 		</Unit>
@@ -337,6 +421,9 @@
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/strided_bloom_filter_test.cpp">
 			<Option target="test_strided_bloom_filter"/>
+		</Unit>
+		<Unit filename="/home/rjzhb/Project/DataPortraits/test/string_util_test.cpp">
+			<Option target="test_string_util"/>
 		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

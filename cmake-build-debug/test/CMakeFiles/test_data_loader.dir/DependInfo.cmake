@@ -13,6 +13,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src/filter"
   "../src/common"
   "../src/dataloader"
+  "../src/utils"
   "../third_party/gtest/include"
   )
 

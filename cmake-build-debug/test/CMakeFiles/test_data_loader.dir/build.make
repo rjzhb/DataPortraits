@@ -60,15 +60,15 @@ include test/CMakeFiles/test_data_loader.dir/flags.make
 test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o: test/CMakeFiles/test_data_loader.dir/flags.make
 test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o: ../test/dataloader_test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rjzhb/Project/DataPortraits/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o -c /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/g++-11  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_data_loader.dir/dataloader_test.cpp.o -c /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp
 
 test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp > CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp > CMakeFiles/test_data_loader.dir/dataloader_test.cpp.i
 
 test/CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s"
-	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp -o CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug/test && /usr/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp -o CMakeFiles/test_data_loader.dir/dataloader_test.cpp.s
 
 # Object files for target test_data_loader
 test_data_loader_OBJECTS = \
