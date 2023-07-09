@@ -24,7 +24,7 @@ public:
 
     auto getLongestChain() const -> std::vector<std::string>;
 
-    auto insertStrided(std::string &value, size_t stride) -> void;
+    auto insertStrided(std::string value, size_t stride) -> void;
 
     auto queryStrided(std::string value, size_t stride) const -> int;
 

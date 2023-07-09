@@ -19,7 +19,7 @@ auto StridedBloomFilter::operator=(StridedBloomFilter &&other) noexcept -> Strid
     return *this;
 }
 
-auto StridedBloomFilter::insertStrided(std::string &value, size_t stride) -> void {
+auto StridedBloomFilter::insertStrided(std::string value, size_t stride) -> void {
     for (size_t i = 0; i < value.size(); i += stride * tile_size_) {
         if (i + stride * tile_size_ > value.size()) {
             break;
