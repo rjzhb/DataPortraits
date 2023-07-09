@@ -20,5 +20,7 @@ add_executable(DataPortraits benchmark.cpp src/filter/bloom_filter.h src/filter/
         src/filter/strided_bloom_filter.cpp src/filter/strided_bloom_filter.h
         src/common/define.h src/dataloader/dataloader.h
         src/dataloader/dataloader.cpp src/utils/string_util.cpp
-        src/utils/string_util.h)
+        src/utils/string_util.h
+        src/utils/task_queue.cpp
+        src/utils/task_queue.h)
 

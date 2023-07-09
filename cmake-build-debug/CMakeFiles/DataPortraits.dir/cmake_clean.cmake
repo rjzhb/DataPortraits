@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataPortraits.dir/src/filter/bloom_filter.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/filter/strided_bloom_filter.cpp.o"
   "CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.o"
+  "CMakeFiles/DataPortraits.dir/src/utils/task_queue.cpp.o"
   "DataPortraits"
   "DataPortraits.pdb"
 )

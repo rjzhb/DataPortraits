@@ -413,6 +413,14 @@
 			<Option target="DataPortraits"/>
 			<Option target="DataPortraits_lib"/>
 		</Unit>
+		<Unit filename="/home/rjzhb/Project/DataPortraits/src/utils/task_queue.cpp">
+			<Option target="DataPortraits"/>
+			<Option target="DataPortraits_lib"/>
+		</Unit>
+		<Unit filename="/home/rjzhb/Project/DataPortraits/src/utils/task_queue.h">
+			<Option target="DataPortraits"/>
+			<Option target="DataPortraits_lib"/>
+		</Unit>
 		<Unit filename="/home/rjzhb/Project/DataPortraits/test/bloom_filter_test.cpp">
 			<Option target="test_bloom_filter"/>
 		</Unit>

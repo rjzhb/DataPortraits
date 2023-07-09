@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+../src/common/define.h
+
+../src/dataloader/dataloader.h
 fstream
 -
 iostream
 -
 vector
 -
+define.h
+../src/dataloader/define.h
+
+../src/utils/task_queue.h
+queue
+-
+atomic
+-
+vector
+-
+iostream
+-
+dataloader.h
+../src/utils/dataloader.h
 
 /home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp
+thread
+-
+future
+-
 gtest/gtest.h
 /home/rjzhb/Project/DataPortraits/test/gtest/gtest.h
-../src/dataloader/dataloader.h
-/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.h
+dataloader.h
+/home/rjzhb/Project/DataPortraits/test/dataloader.h
+task_queue.h
+/home/rjzhb/Project/DataPortraits/test/task_queue.h
 

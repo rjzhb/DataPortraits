@@ -233,6 +233,33 @@ utils/string_util.cpp.s:
 	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.s
 .PHONY : utils/string_util.cpp.s
 
+utils/task_queue.o: utils/task_queue.cpp.o
+
+.PHONY : utils/task_queue.o
+
+# target to build an object file
+utils/task_queue.cpp.o:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o
+.PHONY : utils/task_queue.cpp.o
+
+utils/task_queue.i: utils/task_queue.cpp.i
+
+.PHONY : utils/task_queue.i
+
+# target to preprocess a source file
+utils/task_queue.cpp.i:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.i
+.PHONY : utils/task_queue.cpp.i
+
+utils/task_queue.s: utils/task_queue.cpp.s
+
+.PHONY : utils/task_queue.s
+
+# target to generate assembly for a file
+utils/task_queue.cpp.s:
+	cd /home/rjzhb/Project/DataPortraits/cmake-build-debug && $(MAKE) -f src/CMakeFiles/DataPortraits_lib.dir/build.make src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.s
+.PHONY : utils/task_queue.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -254,6 +281,9 @@ help:
 	@echo "... utils/string_util.o"
 	@echo "... utils/string_util.i"
 	@echo "... utils/string_util.s"
+	@echo "... utils/task_queue.o"
+	@echo "... utils/task_queue.i"
+	@echo "... utils/task_queue.s"
 .PHONY : help
 
 

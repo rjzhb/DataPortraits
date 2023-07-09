@@ -323,6 +323,33 @@ src/utils/string_util.cpp.s:
 	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/string_util.cpp.s
 .PHONY : src/utils/string_util.cpp.s
 
+src/utils/task_queue.o: src/utils/task_queue.cpp.o
+
+.PHONY : src/utils/task_queue.o
+
+# target to build an object file
+src/utils/task_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/task_queue.cpp.o
+.PHONY : src/utils/task_queue.cpp.o
+
+src/utils/task_queue.i: src/utils/task_queue.cpp.i
+
+.PHONY : src/utils/task_queue.i
+
+# target to preprocess a source file
+src/utils/task_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/task_queue.cpp.i
+.PHONY : src/utils/task_queue.cpp.i
+
+src/utils/task_queue.s: src/utils/task_queue.cpp.s
+
+.PHONY : src/utils/task_queue.s
+
+# target to generate assembly for a file
+src/utils/task_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/DataPortraits.dir/build.make CMakeFiles/DataPortraits.dir/src/utils/task_queue.cpp.s
+.PHONY : src/utils/task_queue.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -352,6 +379,9 @@ help:
 	@echo "... src/utils/string_util.o"
 	@echo "... src/utils/string_util.i"
 	@echo "... src/utils/string_util.s"
+	@echo "... src/utils/task_queue.o"
+	@echo "... src/utils/task_queue.i"
+	@echo "... src/utils/task_queue.s"
 .PHONY : help
 
 

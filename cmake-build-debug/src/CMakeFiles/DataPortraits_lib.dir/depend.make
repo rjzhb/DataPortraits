@@ -15,3 +15,8 @@ src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o: ../src/f
 
 src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o: ../src/utils/string_util.cpp
 
+src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o: ../src/common/define.h
+src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o: ../src/dataloader/dataloader.h
+src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o: ../src/utils/task_queue.cpp
+src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o: ../src/utils/task_queue.h
+

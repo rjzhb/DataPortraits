@@ -3,21 +3,27 @@
 //
 
 #include "dataloader.h"
-#include "define.h"
 
-DataLoader::DataLoader(const std::string &filename, size_t block_size) :
+DataLoader::DataLoader(const std::string &filename, size_t block_size, size_t stride,
+                       size_t tile_size) :
         input_stream_(filename, std::ios::binary),
+        stride_(stride),
+        tile_size_(tile_size),
         block_size_(block_size),
         output_stream_(filename + ".out", std::ios::binary),
         buffer_(block_size),
         buffer_size_(0),
         current_pos_(0) {
-    filter_.resize(SIZE);
+
+    filter_.resize(DATASET_SIZE / (stride_ * tile_size_));
+
     // Check if the file is opened successfully
     if (!input_stream_.is_open()) {
+        std::cerr << "Error: Failed to open file " << filename << std::endl;
         throw std::runtime_error("Unable to open file " + filename);
     }
     if (!output_stream_.is_open()) {
+        std::cerr << "Error: Failed to open output file " << filename << ".out" << std::endl;
         throw std::runtime_error("Unable to open output file " + filename + ".out");
     }
 
@@ -58,15 +64,15 @@ std::vector<char> DataLoader::getNextBlock() {
 }
 
 
-void DataLoader::processBlock(std::vector<char> &block, size_t stride, size_t tile_size) {
-    for (size_t i = 0; i < block.size(); i += stride * tile_size) {
-        if (i + stride * tile_size > block.size()) {
+void DataLoader::processBlock(std::vector<char> &block) {
+    for (size_t i = 0; i < block.size(); i += stride_ * tile_size_) {
+        if (i + stride_ * tile_size_ > block.size()) {
             break;
         }
 
         std::vector<char> value;
-        if (i + stride * tile_size < block.size()) {
-            value = std::vector<char>(block.begin() + i, block.begin() + i + stride * tile_size);
+        if (i + stride_ * tile_size_ < block.size()) {
+            value = std::vector<char>(block.begin() + i, block.begin() + i + stride_ * tile_size_);
         } else {
             value = std::vector<char>(block.begin() + i, block.end());
         }
@@ -74,7 +80,7 @@ void DataLoader::processBlock(std::vector<char> &block, size_t stride, size_t ti
         for (size_t j = 0; j < HASH_FUNCTION_AMOUNT; ++j) {
             std::string str(value.begin(), value.begin() + value.size());
             size_t hash_value = std::hash<std::string>{}(str + std::to_string(j));
-            size_t index = hash_value % SIZE;
+            size_t index = hash_value % filter_.size();
             filter_[index] = true;
         }
     }
@@ -124,4 +130,8 @@ std::vector<char> DataLoader::readFileToVector(const std::string &filename) {
 
 auto DataLoader::getFilter() const -> std::vector<char> {
     return filter_;
+}
+
+auto DataLoader::getCurrentPos() const -> size_t {
+    return current_pos_;
 }
