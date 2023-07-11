@@ -33,5 +33,6 @@ int main() {
     }
 
     filter->clear();
+    delete filter;
     return 0;
 }
