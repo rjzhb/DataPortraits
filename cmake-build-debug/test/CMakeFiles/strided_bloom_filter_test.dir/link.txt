@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/strided_bloom_filter_test.dir/strided_bloom_filter_test.cpp.o -o strided_bloom_filter_test  ../src/libDataPortraits_lib.a -lgtest -lgtest_main -lpthread 

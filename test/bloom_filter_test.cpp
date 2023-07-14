@@ -6,7 +6,10 @@
 
 // Test BloomFilter
 TEST(BloomFilterTest, InsertAndContains) {
-    auto *filter = new BloomFilter(1000, 5);
+    const size_t tile_size = 5;
+    const size_t filter_size = 1000;
+
+    auto *filter = new BloomFilter(filter_size, tile_size);
 
     filter->insert("hello");
     filter->insert("world");

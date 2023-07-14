@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/dataloader_test.dir/dataloader_test.cpp.o -o dataloader_test  ../src/libDataPortraits_lib.a -lgtest -lgtest_main -lpthread 

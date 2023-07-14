@@ -17,9 +17,6 @@ class BloomFilter {
 public:
     BloomFilter(size_t size, size_t hash_function_amount);
     ~BloomFilter();
-    BloomFilter(BloomFilter &&other) noexcept;
-
-    auto operator=(BloomFilter &&other) noexcept -> BloomFilter &;
 
     auto insert(const std::string &value) -> void;
     auto contains(const std::string &value) const -> bool;

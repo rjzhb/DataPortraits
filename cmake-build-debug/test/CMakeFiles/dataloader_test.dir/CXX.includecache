@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/common/define.h
+
+../src/dataloader/dataloader.h
+fstream
+-
+iostream
+-
+vector
+-
+define.h
+../src/dataloader/define.h
+
+/home/rjzhb/Project/DataPortraits/test/dataloader_test.cpp
+thread
+-
+future
+-
+gtest/gtest.h
+/home/rjzhb/Project/DataPortraits/test/gtest/gtest.h
+dataloader.h
+/home/rjzhb/Project/DataPortraits/test/dataloader.h
+

@@ -1,24 +1,18 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o"
-  "/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o"
-  "/home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o"
-  "/home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o"
-  "/home/rjzhb/Project/DataPortraits/src/utils/task_queue.cpp" "/home/rjzhb/Project/DataPortraits/cmake-build-debug/src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/filter"
-  "../src/common"
-  "../src/dataloader"
-  "../src/utils"
-  "../third_party/gtest/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/rjzhb/Project/DataPortraits/src/dataloader/dataloader.cpp" "src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o" "gcc" "src/CMakeFiles/DataPortraits_lib.dir/dataloader/dataloader.cpp.o.d"
+  "/home/rjzhb/Project/DataPortraits/src/filter/bloom_filter.cpp" "src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o" "gcc" "src/CMakeFiles/DataPortraits_lib.dir/filter/bloom_filter.cpp.o.d"
+  "/home/rjzhb/Project/DataPortraits/src/filter/strided_bloom_filter.cpp" "src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o" "gcc" "src/CMakeFiles/DataPortraits_lib.dir/filter/strided_bloom_filter.cpp.o.d"
+  "/home/rjzhb/Project/DataPortraits/src/utils/string_util.cpp" "src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o" "gcc" "src/CMakeFiles/DataPortraits_lib.dir/utils/string_util.cpp.o.d"
+  "/home/rjzhb/Project/DataPortraits/src/utils/task_queue.cpp" "src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o" "gcc" "src/CMakeFiles/DataPortraits_lib.dir/utils/task_queue.cpp.o.d"
   )
 
 # Targets to which this target links.

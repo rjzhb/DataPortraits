@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/dataset_test.dir/dataset_test.cpp.o -o dataset_test  ../src/libDataPortraits_lib.a -lgtest -lgtest_main -lpthread 

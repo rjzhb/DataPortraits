@@ -1,0 +1,4 @@
+dataSetName:sequences.txt
+stride:20
+tileSize:20
+filterSize:1000

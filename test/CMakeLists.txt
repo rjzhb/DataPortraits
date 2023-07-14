@@ -4,6 +4,7 @@ set(TESTS
         strided_bloom_filter_test
         dataloader_test
         string_util_test
+        dataset_test
         )
 
 foreach(TEST ${TESTS})

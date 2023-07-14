@@ -5,17 +5,17 @@
 #include <future>
 #include "gtest/gtest.h"
 #include "dataloader.h"
-#include "task_queue.h"
-
 
 TEST(DataLoaderTest, ReadAndWrite) {
     std::string filename = "../../test/test.bin";
 
-    size_t stride = 4;
-    size_t tile_size = 4;
-    size_t filter_size = 1000;
+    const size_t stride = 4;
+    const size_t tile_size = 4;
+    const size_t filter_size = 1000;
+    const size_t block_size = 1024 * 2;
+
     // Read the test file and write data of bloomfilter hash into a new file
-    DataLoader loader(filename, 2048, filter_size, stride, tile_size);
+    DataLoader loader(filename, block_size, filter_size, stride, tile_size);
     while (loader.hasNextBlock()) {
         std::vector<char> block = loader.getNextBlock();
         loader.processBlock(block);
@@ -31,12 +31,13 @@ TEST(DataLoaderTest, ReadAndWrite) {
 TEST(DataLoaderTest, WriteFilterToFile) {
     std::string filename = "../../dataset/ag_news_csv/train.txt";
 
-    size_t stride = 5;
-    size_t tile_size = 20;
-    size_t filter_size = 10000;
-    size_t block_size = DATASET_SIZE / (stride * tile_size) * 1000;
+    const size_t stride = 5;
+    const size_t tile_size = 20;
+    const size_t filter_size = 10000;
+    const size_t block_size = DATASET_SIZE / (stride * tile_size) * 1000;
+
     // Read the test file and write data of bloomfilter hash into a new file
-    DataLoader loader(filename, DATASET_SIZE / (stride * tile_size) * 1000, filter_size, stride, tile_size);
+    DataLoader loader(filename, block_size, filter_size, stride, tile_size);
     while (loader.hasNextBlock()) {
         std::vector<char> block = loader.getNextBlock();
         loader.processBlock(block);
@@ -54,14 +55,14 @@ TEST(DataLoaderTest, ParallelWriteFilterToFile) {
     std::string filename = "../../dataset/ag_news_csv/train.txt";
 
     //Blocksize should ideally be exactly divided by stripe * tile_ Size
-    size_t stride = 20;
-    size_t tile_size = 20;
-    size_t filter_size = 1000;
-    size_t block_size = DATASET_SIZE / (stride * tile_size) * 1000;
+    const size_t stride = 20;
+    const size_t tile_size = 20;
+    const size_t filter_size = 1000;
+    const size_t block_size = DATASET_SIZE / (stride * tile_size) * 1000;
+    const size_t num_blocks = 29 * 1024 * 1024 / block_size;
+
     // Read the test file and write data of bloomfilter hash into a new file
     DataLoader loader(filename, block_size, filter_size, stride, tile_size);
-
-    size_t num_blocks = 29 * 1024 * 1024 / block_size;
 
     //parallel
 #pragma omp parallel for
@@ -78,6 +79,67 @@ TEST(DataLoaderTest, ParallelWriteFilterToFile) {
 
     EXPECT_EQ(temp, loader.getFilter());
 }
+
+TEST(DataLoaderTest, ParallelWriteFilterToFile1) {
+    std::string filename = "../../dataset/gpt-neo/540L_50TOPK_1.3B/sequences.txt";
+
+    //Blocksize should ideally be exactly divided by stripe * tile_ Size
+    const size_t stride = 4;
+    const size_t tile_size = 4;
+    const size_t filter_size = 12478054;
+    const size_t block_size = 15 * 1024 * 1024 / 2;
+    const size_t num_blocks = 2;
+
+
+    // Read the test file and write data of bloomfilter hash into a new file
+    DataLoader loader(filename, block_size, filter_size, stride, tile_size);
+    //parallel
+#pragma omp parallel for
+    for (size_t i = 0; i < num_blocks; ++i) {
+        std::vector<char> block = loader.getNextBlock();
+        if (!block.empty()) {
+            loader.processBlock(block);
+        }
+    }
+
+    loader.writeFilterToFile("../../dataset/gpt-neo/540L_50TOPK_1.3B/sequences.bin");
+    // Compare the two filter
+    auto temp = loader.readFileToVector("../../dataset/gpt-neo/540L_50TOPK_1.3B/sequences.bin");
+
+    EXPECT_EQ(temp, loader.getFilter());
+}
+
+
+
+TEST(DataLoaderTest, ParallelWriteFilterToFile2) {
+    std::string filename = "../../dataset/gpt-neo/540L_50TOPK_2.7B/sequences.txt";
+
+    //Blocksize should ideally be exactly divided by stripe * tile_ Size
+    const size_t stride = 4;
+    const size_t tile_size = 4;
+    const size_t filter_size = 124780544;
+    const size_t block_size = 119 * 1024 * 1024 / 2;
+    const size_t num_blocks = 2;
+
+
+    // Read the test file and write data of bloomfilter hash into a new file
+    DataLoader loader(filename, block_size, filter_size, stride, tile_size);
+    //parallel
+#pragma omp parallel for
+    for (size_t i = 0; i < num_blocks; ++i) {
+        std::vector<char> block = loader.getNextBlock();
+        if (!block.empty()) {
+            loader.processBlock(block);
+        }
+    }
+
+    loader.writeFilterToFile("../../dataset/gpt-neo/540L_50TOPK_2.7B/sequences.bin");
+    // Compare the two filter
+    auto temp = loader.readFileToVector("../../dataset/gpt-neo/540L_50TOPK_2.7B/sequences.bin");
+
+    EXPECT_EQ(temp, loader.getFilter());
+}
+
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);

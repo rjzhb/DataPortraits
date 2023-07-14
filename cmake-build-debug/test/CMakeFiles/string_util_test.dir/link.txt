@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/string_util_test.dir/string_util_test.cpp.o -o string_util_test  ../src/libDataPortraits_lib.a -lgtest -lgtest_main -lpthread 

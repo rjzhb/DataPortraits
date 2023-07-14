@@ -38,6 +38,14 @@ DataLoader::~DataLoader() {
     output_stream_.close();
 }
 
+auto DataLoader::getFilter() const -> std::vector<char> {
+    return filter_;
+}
+
+auto DataLoader::getCurrentPos() const -> size_t {
+    return current_pos_;
+}
+
 auto DataLoader::hasNextBlock() const -> bool {
     return current_pos_ < buffer_size_ || !input_stream_.eof();
 }
@@ -128,12 +136,4 @@ auto DataLoader::readFileToVector(const std::string &filename) -> std::vector<ch
     }
 
     return buffer;
-}
-
-auto DataLoader::getFilter() const -> std::vector<char> {
-    return filter_;
-}
-
-auto DataLoader::getCurrentPos() const -> size_t {
-    return current_pos_;
 }

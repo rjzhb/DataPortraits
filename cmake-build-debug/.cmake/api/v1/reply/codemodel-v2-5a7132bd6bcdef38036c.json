@@ -1,0 +1,149 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "DataPortraits",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DataPortraits::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DataPortraits-Debug-83ef4951a16ef90822bd.json",
+					"name" : "DataPortraits",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "DataPortraits_lib::@145eef247bfb46b6828c",
+					"jsonFile" : "target-DataPortraits_lib-Debug-bd59c2e927e495b1a212.json",
+					"name" : "DataPortraits_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "bloom_filter_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-bloom_filter_test-Debug-6035ff453b6cbf921c7c.json",
+					"name" : "bloom_filter_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "dataloader_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-dataloader_test-Debug-b3e3f6f177a6310e0574.json",
+					"name" : "dataloader_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "dataset_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-dataset_test-Debug-6fdf96072cfac177bc76.json",
+					"name" : "dataset_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "strided_bloom_filter_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-strided_bloom_filter_test-Debug-26d7861e413967d1b705.json",
+					"name" : "strided_bloom_filter_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "string_util_test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-string_util_test-Debug-d76fcd052d462330cecf.json",
+					"name" : "string_util_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rjzhb/Project/DataPortraits/cmake-build-debug",
+		"source" : "/home/rjzhb/Project/DataPortraits"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
