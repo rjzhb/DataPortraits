@@ -112,9 +112,9 @@ TEST(DataSetTest, testDatasetGPTNEO_2_query) {
 }
 
 TEST(DataSetTest, testDatasetGPTNEO_2_memory_query) {
-    const size_t stride = 4;
-    const size_t tile_size = 4;
-    const size_t filter_size = 6239027;
+    const size_t stride = 1;
+    const size_t tile_size = 50;
+    const size_t filter_size = 4367319;
 
     const std::string query_str = "#\n"
                                   "# THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n"
@@ -127,17 +127,59 @@ TEST(DataSetTest, testDatasetGPTNEO_2_memory_query) {
     try {
         std::string file_path = "../../dataset/gpt-neo/540L_50TOPK_2.7B/sequences.txt";
         std::string file_contents = read_file(file_path);
+
+        std::string seq_len = "../../dataset/gpt-neo/540L_50TOPK_2.7B/seqLen.txt";
+        std::ifstream seq_len_stream(seq_len);
+        if (!seq_len_stream.is_open()) {
+            std::cerr << "Failed to open file " << seq_len << std::endl;
+        }
+
+        std::vector<int> numbers;
+
+        int num;
+        while (seq_len_stream >> num) {
+            numbers.push_back(num);
+        }
+
+        seq_len_stream.close();
+
+        std::vector<std::string> query_list;
+        int pos = 0;
+        for (int i: numbers) {
+            if (pos + i <= file_contents.size()) {
+                query_list.push_back(file_contents.substr(pos, i));
+                pos += i;
+            }
+        }
+
+        //Filter start
         auto *filter = new StridedBloomFilter(filter_size, HASH_FUNCTION_AMOUNT, tile_size);
 
         std::cout << file_contents.size() << std::endl;
         filter->insertStrided(file_contents, stride);
-        filter->queryStrided(query_str, stride);
 
-        auto longest_chain = filter->getLongestChain();
-        for (size_t i = 0; i < longest_chain.size(); i++) {
-            spdlog::info("longest chain {}: [{}]", i, longest_chain[i]);
+        std::string output_file = "../../dataset/gpt-neo/540L_50TOPK_2.7B/result.txt";
+        std::remove(output_file.c_str());
+        std::ofstream output(output_file, std::ios::app);
+
+        auto start_time = std::chrono::steady_clock::now();
+        for (const auto &it: query_list) {
+            filter->queryStrided(it, stride);
+            auto longest_chain = filter->getLongestChain();
+            if (!output.is_open()) {
+                std::cerr << "Failed to create file " << output_file << std::endl;
+            }
+            size_t max_len = longest_chain.empty() ? 0 : longest_chain[0].length();
+            output << longest_chain.size() << " " << max_len << std::endl;
+            break;
         }
+        auto end_time = std::chrono::steady_clock::now();
+        auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time);
 
+        // 输出运行时间
+        std::cout << "程序运行时间为：" << elapsed_time.count() << " 毫秒" << std::endl;
+
+        output.close();
         filter->clear();
         delete filter;
 

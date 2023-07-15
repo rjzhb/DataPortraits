@@ -115,9 +115,9 @@ TEST(DataLoaderTest, ParallelWriteFilterToFile2) {
     std::string filename = "../../dataset/gpt-neo/540L_50TOPK_2.7B/sequences.txt";
 
     //Blocksize should ideally be exactly divided by stripe * tile_ Size
-    const size_t stride = 4;
-    const size_t tile_size = 4;
-    const size_t filter_size = 124780544;
+    const size_t stride = 1;
+    const size_t tile_size = 50;
+    const size_t filter_size = 4367319;
     const size_t block_size = 119 * 1024 * 1024 / 2;
     const size_t num_blocks = 2;
 
